@@ -1,7 +1,7 @@
 // import { hasErrors } from './modules/forms.js';
 // import { initSpoiler, initDdropdown } from './modules/spoilers.js';
 // import { initTabs } from './modules/tabs.js';
-// import { initSliders } from './modules/sliders.js';
+import { useSliders } from './modules/sliders.js';
 import { initHeader } from "./modules/header.js";
 // import { initModals, openModalIf } from './modules/modals.js';
 import { useDynamicAdapt } from "./modules/dynamicAdapt.js";
@@ -18,6 +18,7 @@ import "particles.js";
 function app() {
   initHeader();
   useDynamicAdapt("max");
+  useSliders();
 
   const typed = new Typed("#hero-title", {
     strings: ["привернути увагу віртуального світу!", "втілити ідеї в онлайні!", "забезпечити вражаючий веб-профіль!"],

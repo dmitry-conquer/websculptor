@@ -1,8 +1,9 @@
 /* Import lib styles  */
-// @import '../../node_modules/swiper/swiper.scss';
+@import "../../node_modules/swiper/swiper.scss";
 // @import '../../node_modules/swiper/modules/navigation/navigation.scss';
-// @import '../../node_modules/swiper/modules/autoplay/autoplay.scss';
-// @import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import "../../node_modules/swiper/modules/autoplay/autoplay.scss";
+@import "../../node_modules/swiper/modules/pagination/pagination.scss";
+@import "../../node_modules/swiper/modules/parallax/parallax.scss";
 // @import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 // @import '../../node_modules/nouislider/dist/nouislider.min';
 // @import '../../node_modules/aos/src/sass/aos.scss';
@@ -20,7 +21,7 @@ body {
 }
 
 .particles-js-canvas-el {
-  @apply fixed left-0 top-0 w-full h-full -z-10
+  @apply fixed left-0 top-0 -z-10 h-full w-full;
 }
 
 .active-header-icon div {
@@ -38,4 +39,38 @@ body {
 
 .lock {
   @apply overflow-hidden;
+}
+
+@layer utilities {
+  .custom-shadow {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  // .responsive-grid {
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // }
+}
+
+/*
+  sliders
+*/
+
+.half-slider {
+  @apply w-full sm:w-5/6 overflow-hidden custom-shadow rounded-lg mx-auto ;
+}
+.half-wrapper {
+  @apply flex;
+}
+.half-slide {
+  @apply shrink-0 relative text-white;
+}
+
+.pagination {
+  @apply mt-8 flex justify-center;
+  .swiper-pagination-bullet {
+    @apply h-2 w-5 rounded-lg transition-all duration-300;
+  }
+  .swiper-pagination-bullet {
+    @apply bg-primary;
+  }
 }
