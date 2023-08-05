@@ -9,8 +9,33 @@
 // @import '../../node_modules/choices.js/src/styles/choices.scss';
 // "./lib/tips";
 
+@import "fonts";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-inter text-base text-slate-800;
+}
 
+.particles-js-canvas-el {
+  @apply fixed left-0 top-0 w-full h-full -z-10
+}
+
+.active-header-icon div {
+  @apply [&>*:nth-child(1)]:w-6 [&>*:nth-child(1)]:-translate-y-0 [&>*:nth-child(1)]:rotate-45 
+   [&>*:nth-child(2)]:opacity-0 [&>*:nth-child(3)]:translate-y-0 
+   [&>*:nth-child(3)]:-rotate-45;
+}
+
+.scroll {
+  @apply shadow-md;
+  & > div {
+    @apply py-4;
+  }
+}
+
+.lock {
+  @apply overflow-hidden;
+}

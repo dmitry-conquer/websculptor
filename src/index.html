@@ -1,18 +1,87 @@
 <!DOCTYPE html>
 <html lang="uk">
   @@include('components/head.html', { 'title': 'Головна' })
-  <body>
-    <div class="wrapper">
+  <body id="particles-js">
+    <div class="flex min-h-full flex-col">
       @@include('components/header.html', { })
-      <main>
-        <section class=""></section>
+      <main class="flex-grow">
+        <section class="flex bg-slate-100 py-24 sm:py-32">
+          <div class="container flex flex-col items-center gap-5 md:gap-12 lg:flex-row">
+            <div class="lg:w-1/2">
+              <h1 class="mb-4 text-center text-3xl font-extrabold sm:text-left md:text-4xl lg:mb-10">
+                Ми допоможемо вам: <br />
+                <span id="hero-title" class="text-2xl leading-none sm:leading-normal md:text-3xl"></span>
+              </h1>
+              <div class="mb-10 text-sm sm:text-base md:text-lg">
+                <p>
+                  Наша мета - допомогти вам створити видовищний веб-сайт, який буде відзеркалювати унікальність вашого
+                  бренду та привертати цільову аудиторію.
+                </p>
+                <br>
+                <p>
+                  Ми відкриваємо перед вами безмежні можливості онлайн світу, забезпечуючи високий рівень дизайну та
+                  функціональності вашого веб-проекту.
+                </p>
+              </div>
+              <div
+                class="flex flex-row flex-wrap items-center gap-3 text-center max-sm:justify-center sm:gap-5 sm:text-left">
+                <a
+                  href=""
+                  class="whitespace-nowrap rounded-xl bg-primary px-6 py-4 text-base font-semibold text-white transition-all hover:bg-primary-light hover:shadow-sm sm:text-lg"
+                  >Замовити сайт</a
+                >
+                <a
+                  href=""
+                  class="group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-secondary px-6 py-4 text-base font-semibold text-white transition-all hover:bg-secondary/80 hover:shadow-sm sm:text-lg">
+                  <span>Портфоліо</span>
+                  <svg class="h-6 w-6 transition-all group-hover:translate-x-2">
+                    <use href="./sprites/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="relative flex w-full justify-center sm:w-2/3 lg:w-1/2">
+              <img src="./img/create-site.svg" alt="columns vector" />
+            </div>
+          </div>
+        </section>
+        <section class="fle bg-transparent py-4 sm:py-8">
+          <div class="container flex flex-col items-center gap-5 md:gap-12 lg:flex-row">
+            <div class="relative flex w-full justify-center sm:w-2/3 lg:w-1/2">
+              <img src="./img/web-dev-group.svg" alt="columns vector" />
+            </div>
+            <div class="lg:w-1/2">
+              <h1 class="mb-4 text-center text-3xl font-extrabold sm:text-left md:text-4xl lg:mb-10">Про нас</h1>
+              <div class="mb-10 text-sm sm:text-base md:text-lg">
+                <p>
+                  Ми створюємо ефективні та захоплюючі веб-сайти, що забезпечують наших клієнтів найвищим рівнем
+                  присутності в онлайн просторі.
+                </p>
+                <br>
+                <p>
+                  Наша місія полягає в тому, щоб допомагати бізнесам та індивідуальним клієнтам реалізувати свій
+                  потенціал у цифровому світі. Ми віримо, що кожен проект є унікальним та вимагає індивідуального
+                  підходу. Наша команда відданих фахівців працює над кожним веб-сайтом з великою увагою до деталей та
+                  творчості.
+                </p>
+              </div>
+              <div
+                class="flex flex-row flex-wrap items-center gap-3 text-center max-sm:justify-center sm:gap-5 sm:text-left">
+                <a
+                  href=""
+                  class="group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-primary px-6 py-4 text-base font-semibold text-white transition-all hover:bg-primary/80 hover:shadow-sm sm:text-lg">
+                  <span>Детальніше</span>
+                  <svg class="h-6 w-6 transition-all group-hover:translate-x-2">
+                    <use href="./sprites/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      @@include('components/footer.html', { }) 
-      @@include('components/modal.html', { })
+      @@include('components/footer.html', { })
     </div>
-    <script
-      type="module"
-      crossorigin
-      src="./js/app.min.js"></script>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
   </body>
 </html>
