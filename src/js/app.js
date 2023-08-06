@@ -1,7 +1,7 @@
 // import { hasErrors } from './modules/forms.js';
 // import { initSpoiler, initDdropdown } from './modules/spoilers.js';
 // import { initTabs } from './modules/tabs.js';
-import { useSliders } from './modules/sliders.js';
+import { useSliders } from "./modules/sliders.js";
 import { initHeader } from "./modules/header.js";
 // import { initModals, openModalIf } from './modules/modals.js';
 import { useDynamicAdapt } from "./modules/dynamicAdapt.js";
@@ -20,13 +20,19 @@ function app() {
   useDynamicAdapt("max");
   useSliders();
 
-  const typed = new Typed("#hero-title", {
-    strings: ["привернути увагу віртуального світу!", "втілити ідеї в онлайні!", "забезпечити вражаючий веб-профіль!"],
-    typeSpeed: 50,
-    backSpeed: 20,
-    startDelay: 0,
-    loop: true,
-  });
+  if (document.getElementById("hero-title")) {
+    const typed = new Typed("#hero-title", {
+      strings: [
+        "привернути увагу віртуального світу!",
+        "втілити ідеї в онлайні!",
+        "забезпечити вражаючий веб-профіль!",
+      ],
+      typeSpeed: 50,
+      backSpeed: 20,
+      startDelay: 0,
+      loop: true,
+    });
+  }
 
   particlesJS.load("particles-js", "./public/particles.json", function () {
     console.log("callback - particles.js config loaded");

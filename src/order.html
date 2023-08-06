@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+  @@include('components/head.html', { 'title': 'Замовити сайт' })
+  <body id="particles-js">
+    <div class="flex min-h-full flex-col">
+      @@include('components/header.html', { })
+      <main class="flex-grow">
+        <!-- order -->
+        <section class="mx-auto max-w-4xl bg-transparent py-24 sm:py-48">
+          <div class="mx-auto mb-16 max-w-2xl text-center">
+            <h2 class="mb-6 text-3xl font-extrabold md:text-4xl">Замовити сайт</h2>
+            <p class="text-sm sm:text-base md:text-lg">
+              Готові реалізувати свою ідею у вигляді захоплюючого та функціонального веб-сайту? Просто заповніть нашу
+              форму замовлення, і ми зв'яжемося з вами найближчим часом, щоб обговорити ваші потреби та розпочати роботу
+              над проектом.
+            </p>
+          </div>
+          <div>
+            <form action="" class="custom-shadow flex flex-wrap gap-4 rounded-md bg-white p-6">
+              <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
+                <label for="form-name" class="sr-only"></label>
+                <input
+                  required
+                  autocomplete="off"
+                  id="form-name"
+                  type="text"
+                  name="form-name"
+                  class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
+                <span
+                  class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                  >Ім'я</span
+                >
+              </div>
+              <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
+                <label for="form-surname" class="sr-only"></label>
+                <input
+                  required
+                  autocomplete="off"
+                  id="form-surname"
+                  name="form-surname"
+                  type="text"
+                  class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
+                <span
+                  class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                  >Прізвище</span
+                >
+              </div>
+              <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
+                <label for="form-email" class="sr-only"></label>
+                <input
+                  required
+                  autocomplete="off"
+                  id="form-email"
+                  name="form-email"
+                  type="text"
+                  inputmode="email"
+                  class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
+                <span
+                  class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                  >Пошта</span
+                >
+              </div>
+              <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
+                <label for="form-tel" class="sr-only"></label>
+                <input
+                  required
+                  autocomplete="off"
+                  id="form-tel"
+                  name="form-tel"
+                  type="text"
+                  inputmode="tel"
+                  class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
+                <span
+                  class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                  >Телефон</span
+                >
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      @@include('components/footer.html', { })
+    </div>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
+  </body>
+</html>
