@@ -1,6 +1,6 @@
 /* Import lib styles  */
 @import "../../node_modules/swiper/swiper.scss";
-// @import '../../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../../node_modules/swiper/modules/navigation/navigation.scss';
 @import "../../node_modules/swiper/modules/autoplay/autoplay.scss";
 @import "../../node_modules/swiper/modules/pagination/pagination.scss";
 @import "../../node_modules/swiper/modules/parallax/parallax.scss";
@@ -73,4 +73,23 @@ body {
   .swiper-pagination-bullet {
     @apply bg-primary;
   }
+}
+
+
+.full-slider {
+  @apply w-full overflow-hidden -m-3 p-3;
+}
+.full-wrapper {
+  @apply flex;
+}
+.full-slide {
+  @apply shrink-0 relative text-sm sm:text-base;
+  &.swiper-slide-next {
+    @apply max-sm:opacity-50 transition-opacity duration-200;
+  }
+}
+
+
+.active-spoiler svg {
+  @apply rotate-180 ;
 }

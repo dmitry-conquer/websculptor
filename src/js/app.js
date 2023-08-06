@@ -1,5 +1,5 @@
 // import { hasErrors } from './modules/forms.js';
-// import { initSpoiler, initDdropdown } from './modules/spoilers.js';
+import { useSpoiler } from './modules/spoilers.js';
 // import { initTabs } from './modules/tabs.js';
 import { useSliders } from "./modules/sliders.js";
 import { initHeader } from "./modules/header.js";
@@ -19,6 +19,7 @@ function app() {
   initHeader();
   useDynamicAdapt("max");
   useSliders();
+  useSpoiler();
 
   if (document.getElementById("hero-title")) {
     const typed = new Typed("#hero-title", {

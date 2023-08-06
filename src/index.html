@@ -2,7 +2,7 @@
 <html lang="uk">
   @@include('components/head.html', { 'title': 'Головна' })
   <body id="particles-js">
-    <div class="flex min-h-full flex-col">
+    <div class="flex min-h-full flex-col overflow-hidden">
       @@include('components/header.html', { })
       <main class="flex-grow">
         <!-- hero -->
@@ -85,15 +85,14 @@
 
         <!-- services -->
         <section class="bg-slate-100 py-8 sm:py-24">
-          <div class="max-w-2xl mx-auto text-center">
-            <h2 class="mb-4  text-3xl font-extrabold md:text-4xl lg:mb-10">Послуги</h2>
-            <p class="mb-16  text-lg">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="mb-4 text-3xl font-extrabold md:text-4xl lg:mb-10">Послуги</h2>
+            <p class="mb-16 text-lg">
               Ми не просто створюємо веб-сайти. Ми створюємо цифрові майстерні та творимо досвід, який ваші відвідувачі
               ніколи не забудуть. Дозвольте нам взяти ваш бізнес на новий рівень в онлайн просторі.
             </p>
           </div>
           <div class="mx-auto max-w-4xl px-4">
-         
             <div class="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2">
               <div class="custom-shadow flex flex-col items-center gap-4 rounded-lg p-8">
                 <img src="./img/bright.svg" alt="Динамічність та яскравість" class="h-16 w-16" />
@@ -160,7 +159,7 @@
             <div class="w-full lg:w-1/2">
               <div class="half-slider">
                 <div class="half-wrapper">
-                  <div class="half-slide">
+                  <article class="half-slide">
                     <img
                       src="./img/portfolio/cover_stomatolog.webp"
                       class="h-full w-full object-cover"
@@ -180,8 +179,8 @@
                         pr at non id nobis accusamus cupiditate sapiente minima!
                       </p>
                     </a>
-                  </div>
-                  <div class="half-slide">
+                  </article>
+                  <article class="half-slide">
                     <img
                       src="./img/portfolio/cover_psycho.webp"
                       class="h-full w-full object-cover"
@@ -201,8 +200,8 @@
                         pr at non id nobis accusamus cupiditate sapiente minima!
                       </p>
                     </a>
-                  </div>
-                  <div class="half-slide">
+                  </article>
+                  <article class="half-slide">
                     <img
                       src="./img/portfolio/factum_cover.webp"
                       class="h-full w-full object-cover"
@@ -222,8 +221,8 @@
                         pr at non id nobis accusamus cupiditate sapiente minima!
                       </p>
                     </a>
-                  </div>
-                  <div class="half-slide">
+                  </article>
+                  <article class="half-slide">
                     <img src="./img/portfolio/cover_tur.webp" class="h-full w-full object-cover" alt="cover_tur" />
                     <a
                       data-swiper-parallax-opacity="0.5"
@@ -240,8 +239,8 @@
                         pr at non id nobis accusamus cupiditate sapiente minima!
                       </p>
                     </a>
-                  </div>
-                  <div class="half-slide">
+                  </article>
+                  <article class="half-slide">
                     <img
                       src="./img/portfolio/file-sluh_cover.webp"
                       class="h-full w-full object-cover"
@@ -261,7 +260,7 @@
                         pr at non id nobis accusamus cupiditate sapiente minima!
                       </p>
                     </a>
-                  </div>
+                  </article>
                 </div>
               </div>
               <div class="pagination"></div>
@@ -446,8 +445,9 @@
                   <h3 class="text-base font-semibold">Lorem, ipsum dolor.</h3>
                   <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
                   <a href="" class="flex items-center gap-2">
-                    <span class="text-sm font-bold">Читати</span>
-                    <svg class="h-5 w-5 text-white transition-transform group-hover:translate-x-2">
+                    <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                    <svg
+                      class="h-5 w-5 text-white transition-transform group-hover:translate-x-2 group-hover:text-secondary">
                       <use href="./sprites/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -460,8 +460,9 @@
                   <h3 class="text-base font-semibold">Lorem, ipsum dolor.</h3>
                   <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
                   <a href="" class="flex items-center gap-2">
-                    <span class="text-sm font-bold">Читати</span>
-                    <svg class="h-5 w-5 text-white transition-transform group-hover:translate-x-2">
+                    <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                    <svg
+                      class="h-5 w-5 text-white transition-transform group-hover:translate-x-2 group-hover:text-secondary">
                       <use href="./sprites/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -474,8 +475,9 @@
                   <h3 class="text-base font-semibold">Lorem, ipsum dolor.</h3>
                   <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
                   <a href="" class="flex items-center gap-2">
-                    <span class="text-sm font-bold">Читати</span>
-                    <svg class="h-5 w-5 text-white transition-transform group-hover:translate-x-2">
+                    <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                    <svg
+                      class="h-5 w-5 text-white transition-transform group-hover:translate-x-2 group-hover:text-secondary">
                       <use href="./sprites/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -488,8 +490,9 @@
                   <h3 class="text-base font-semibold">Lorem, ipsum dolor.</h3>
                   <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
                   <a href="" class="flex items-center gap-2">
-                    <span class="text-sm font-bold">Читати</span>
-                    <svg class="h-5 w-5 text-white transition-transform group-hover:translate-x-2">
+                    <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                    <svg
+                      class="h-5 w-5 text-white transition-transform group-hover:translate-x-2 group-hover:text-secondary">
                       <use href="./sprites/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -502,8 +505,9 @@
                   <h3 class="text-base font-semibold">Lorem, ipsum dolor.</h3>
                   <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
                   <a href="" class="flex items-center gap-2">
-                    <span class="text-sm font-bold">Читати</span>
-                    <svg class="h-5 w-5 text-white transition-transform group-hover:translate-x-2">
+                    <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                    <svg
+                      class="h-5 w-5 text-white transition-transform group-hover:translate-x-2 group-hover:text-secondary">
                       <use href="./sprites/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -516,8 +520,9 @@
                   <h3 class="text-base font-semibold">Lorem, ipsum dolor.</h3>
                   <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
                   <a href="" class="flex items-center gap-2">
-                    <span class="text-sm font-bold">Читати</span>
-                    <svg class="h-5 w-5 text-white transition-transform group-hover:translate-x-2">
+                    <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                    <svg
+                      class="h-5 w-5 text-white transition-transform group-hover:translate-x-2 group-hover:text-secondary">
                       <use href="./sprites/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -538,8 +543,8 @@
               <h2 class="mb-10 text-3xl font-extrabold md:text-4xl">Замовити сайт</h2>
               <p class="mb-10 text-sm sm:text-base md:text-lg">
                 Готові реалізувати свою ідею у вигляді захоплюючого та функціонального веб-сайту? Просто заповніть нашу
-                <a href="order.html" class="text-secondary-dark hover:underline font-medium">форму замовлення</a>, і ми зв'яжемося з вами найближчим часом, щоб обговорити ваші потреби та розпочати
-                роботу над проектом.
+                <a href="order.html" class="font-medium text-secondary-dark hover:underline">форму замовлення</a>, і ми
+                зв'яжемося з вами найближчим часом, щоб обговорити ваші потреби та розпочати роботу над проектом.
               </p>
               <a
                 href="order.html"
@@ -549,6 +554,229 @@
                   <use href="./sprites/sprite.svg#icon-arrow"></use>
                 </svg>
               </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- comments -->
+        <section class="bg-slate-100 py-8 sm:py-24">
+          <div class="container">
+            <div class="mx-auto mb-10 max-w-2xl text-center">
+              <h2 class="mb-6 text-center text-3xl font-extrabold md:text-4xl">Відгуки клієнтів</h2>
+              <p class="text-sm sm:text-base md:text-lg">
+                Наші клієнти - серце нашої діяльності. Ми пишаємося позитивними відгуками та довірою, яку вони надають
+                нам. Відгуки є свідченням нашої здатності зробити ваші ідеї реальністю.
+              </p>
+            </div>
+            <div class="  ">
+              <div class="full-slider">
+                <div class="mb-4 flex w-full justify-end gap-3 max-sm:hidden">
+                  <button
+                    id="comments-prev"
+                    class="grid h-10 w-10 place-content-center rounded-full bg-secondary transition hover:bg-secondary/80"
+                    type="button"
+                    aria-label="Попередній коментар">
+                    <svg class="h-5 w-5 rotate-180 text-white">
+                      <use href="./sprites/sprite.svg#icon-simple-arrow"></use>
+                    </svg>
+                  </button>
+                  <button
+                    id="comments-next"
+                    class="grid h-10 w-10 place-content-center rounded-full bg-secondary transition hover:bg-secondary/80"
+                    type="button"
+                    aria-label="Наступний коментар">
+                    <svg class="h-5 w-5 text-white">
+                      <use href="./sprites/sprite.svg#icon-simple-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="full-wrapper">
+                  <article class="full-slide custom-shadow rounded-md bg-white p-4 sm:p-6">
+                    <div class="mb-4 flex items-center gap-4">
+                      <img
+                        src="./img/avatars/1.webp"
+                        alt="avatar"
+                        class="h-12 w-12 shrink-0 overflow-hidden rounded-full" />
+                      <div>
+                        <h3 class="block font-semibold">Сергій Бобко</h3>
+                        <span class="block text-xs text-secondary-dark">22.03.2023</span>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iste ipsum fuga odio. Vero officia
+                      voluptates mollitia fugit incidunt rem, itaque, velit aliquid quisquam eveniet optio non, impedit
+                      consequatur. Dolores!
+                    </p>
+                  </article>
+                  <article class="full-slide custom-shadow rounded-md bg-white p-4 sm:p-6">
+                    <div class="mb-4 flex items-center gap-4">
+                      <img
+                        src="./img/avatars/2.webp"
+                        alt="avatar"
+                        class="h-12 w-12 shrink-0 overflow-hidden rounded-full" />
+                      <div>
+                        <h3 class="block font-semibold">Анна Скічко</h3>
+                        <span class="block text-xs text-secondary-dark">22.03.2023</span>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iste ipsum fuga odio. Vero officia
+                      voluptates mollitia fugit incidunt rem, itaque, velit aliquid quisquam eveniet optio non, impedit
+                      consequatur. Dolores!
+                    </p>
+                  </article>
+                  <article class="full-slide custom-shadow rounded-md bg-white p-4 sm:p-6">
+                    <div class="mb-4 flex items-center gap-4">
+                      <img
+                        src="./img/avatars/3.webp"
+                        alt="avatar"
+                        class="h-12 w-12 shrink-0 overflow-hidden rounded-full" />
+                      <div>
+                        <h3 class="block font-semibold">Наталія Семенко</h3>
+                        <span class="block text-xs text-secondary-dark">22.03.2023</span>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iste ipsum fuga odio. Vero officia
+                      voluptates mollitia fugit incidunt rem, itaque, velit aliquid quisquam eveniet optio non, impedit
+                      consequatur. Dolores!
+                    </p>
+                  </article>
+                  <article class="full-slide custom-shadow rounded-md bg-white p-4 sm:p-6">
+                    <div class="mb-4 flex items-center gap-4">
+                      <img
+                        src="./img/avatars/4.webp"
+                        alt="avatar"
+                        class="h-12 w-12 shrink-0 overflow-hidden rounded-full" />
+                      <div>
+                        <h3 class="block font-semibold">Олександр Швець</h3>
+                        <span class="block text-xs text-secondary-dark">22.03.2023</span>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iste ipsum fuga odio. Vero officia
+                      voluptates mollitia fugit incidunt rem, itaque, velit aliquid quisquam eveniet optio non, impedit
+                      consequatur. Dolores!
+                    </p>
+                  </article>
+                  <article class="full-slide custom-shadow rounded-md bg-white p-4 sm:p-6">
+                    <div class="mb-4 flex items-center gap-4">
+                      <img
+                        src="./img/avatars/5.webp"
+                        alt="avatar"
+                        class="h-12 w-12 shrink-0 overflow-hidden rounded-full" />
+                      <div>
+                        <h3 class="block font-semibold">Микола Романюк</h3>
+                        <span class="block text-xs text-secondary-dark">22.03.2023</span>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iste ipsum fuga odio. Vero officia
+                      voluptates mollitia fugit incidunt rem, itaque, velit aliquid quisquam eveniet optio non, impedit
+                      consequatur. Dolores!
+                    </p>
+                  </article>
+                  <article class="full-slide custom-shadow rounded-md bg-white p-4 sm:p-6">
+                    <div class="mb-4 flex items-center gap-4">
+                      <img
+                        src="./img/avatars/6.webp"
+                        alt="avatar"
+                        class="h-12 w-12 shrink-0 overflow-hidden rounded-full" />
+                      <div>
+                        <h3 class="block font-semibold">Вікторія Бузенко</h3>
+                        <span class="block text-xs text-secondary-dark">22.03.2023</span>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iste ipsum fuga odio. Vero officia
+                      voluptates mollitia fugit incidunt rem, itaque, velit aliquid quisquam eveniet optio non, impedit
+                      consequatur. Dolores!
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="container bg-transparent py-8 sm:py-24">
+          <h2 class="mb-10 text-center text-3xl font-extrabold md:text-4xl">Залишилися питання?</h2>
+          <div class="items-center flex flex-col lg:flex-row gap-12">
+            <div class="w-full sm:w-3/5 mx-auto lg:w-1/2">
+              <img src="./img/yes-no.svg" alt="yes-no" />
+            </div>
+            <div class="w-full lg:w-1/2 space-y-6 [&>*:last-child]:border-0">
+              <div class="border-b pb-6">
+                <div data-spoiler aria-expanded="false" class=" flex items-center justify-between cursor-pointer">
+                  <h3 class="font-semibold  text-lg sm:text-xl">How much time does it take?</h3>
+                    <svg class='w-6 h-6 rotate-45 transition-transform duration-500'>
+                      <use href='./sprites/sprite.svg#icon-close'></use>
+                    </svg>
+                </div>
+                <div aria-hidden="true" class="max-h-0 overflow-hidden transition-all">
+                  <p class="pt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="border-b pb-6">
+                <div data-spoiler aria-expanded="false" class=" flex items-center justify-between cursor-pointer">
+                  <h3 class="font-semibold  text-lg sm:text-xl">How much time does it take?</h3>
+                    <svg class='w-6 h-6 rotate-45 transition-transform duration-500'>
+                      <use href='./sprites/sprite.svg#icon-close'></use>
+                    </svg>
+                </div>
+                <div aria-hidden="true" class="max-h-0 overflow-hidden transition-all">
+                  <p class="pt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="border-b pb-6">
+                <div data-spoiler aria-expanded="false" class=" flex items-center justify-between cursor-pointer">
+                  <h3 class="font-semibold  text-lg sm:text-xl">How much time does it take?</h3>
+                    <svg class='w-6 h-6 rotate-45 transition-transform duration-500'>
+                      <use href='./sprites/sprite.svg#icon-close'></use>
+                    </svg>
+                </div>
+                <div aria-hidden="true" class="max-h-0 overflow-hidden transition-all">
+                  <p class="pt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="border-b pb-6">
+                <div data-spoiler aria-expanded="false" class=" flex items-center justify-between cursor-pointer">
+                  <h3 class="font-semibold  text-lg sm:text-xl">How much time does it take?</h3>
+                    <svg class='w-6 h-6 rotate-45 transition-transform duration-500'>
+                      <use href='./sprites/sprite.svg#icon-close'></use>
+                    </svg>
+                </div>
+                <div aria-hidden="true" class="max-h-0 overflow-hidden transition-all">
+                  <p class="pt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="border-b pb-6">
+                <div data-spoiler aria-expanded="false" class=" flex items-center justify-between cursor-pointer">
+                  <h3 class="font-semibold  text-lg sm:text-xl">How much time does it take?</h3>
+                    <svg class='w-6 h-6 rotate-45 transition-transform duration-500'>
+                      <use href='./sprites/sprite.svg#icon-close'></use>
+                    </svg>
+                </div>
+                <div aria-hidden="true" class="max-h-0 overflow-hidden transition-all">
+                  <p class="pt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
