@@ -6,14 +6,14 @@
       @@include('components/header.html', { })
       <main class="flex-grow">
         <!-- hero -->
-        <section class="bg-slate-100 py-24 sm:py-32">
-          <div class="container flex flex-col items-center gap-5 md:gap-12 lg:flex-row">
-            <div class="lg:w-1/2">
+        <section class="bg-slate-100  py-section-lg sm:py-section-xl">
+          <div class="container flex flex-col items-center gap-section-gap lg:flex-row">
+            <div id="hero-content" class="lg:w-1/2">
               <h1 class="mb-4 text-center text-3xl font-extrabold sm:text-left md:text-4xl lg:mb-10">
                 Ми допоможемо вам: <br />
                 <span id="hero-title" class="text-2xl leading-none sm:leading-normal md:text-3xl"></span>
               </h1>
-              <div class="mb-10 text-sm sm:text-base md:text-lg">
+              <div class="mb-10 text-base md:text-lg">
                 <p>
                   Наша мета - допомогти вам створити видовищний веб-сайт, який буде відзеркалювати унікальність вашого
                   бренду та привертати цільову аудиторію.
@@ -26,36 +26,25 @@
               </div>
               <div
                 class="flex flex-row flex-wrap items-center gap-3 text-center max-sm:justify-center sm:gap-5 sm:text-left">
-                <a
-                  href=""
-                  class="whitespace-nowrap rounded-xl bg-primary px-6 py-4 text-base font-semibold text-white transition-all hover:bg-primary-light hover:shadow-sm sm:text-lg"
-                  >Замовити сайт</a
-                >
-                <a
-                  href=""
-                  class="group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-secondary px-6 py-4 text-base font-semibold text-white transition-all hover:bg-secondary/80 hover:shadow-sm sm:text-lg">
-                  <span>Портфоліо</span>
-                  <svg class="h-6 w-6 transition-all group-hover:translate-x-2">
-                    <use href="./sprites/sprite.svg#icon-arrow"></use>
-                  </svg>
-                </a>
+                @@include('components/btn-primary.html', { 'text': 'Замовити сайт', 'link': '#' })
+                @@include('components/btn-secondary.html', { 'text': 'Портфоліо', 'link': 'portfolio.html' })
               </div>
             </div>
-            <div class="relative flex w-full justify-center sm:w-2/3 lg:w-1/2">
+            <div data-da="#hero-content,1024,1" class="mx-auto w-full sm:w-5/6 lg:w-1/2 max-lg:mb-8">
               <img src="./img/create-site.svg" alt="columns vector" />
             </div>
           </div>
         </section>
 
         <!-- about -->
-        <section class="bg-transparent py-4 sm:py-8">
-          <div class="container flex flex-col items-center gap-5 md:gap-12 lg:flex-row">
-            <div class="relative flex w-full justify-center sm:w-2/3 lg:w-1/2">
+        <section class="bg-transparent py-section-sm sm:py-section-lg">
+          <div class="container flex flex-col items-center gap-section-gap lg:flex-row">
+            <div data-da="#about-content,1024,1" class="w-full mx-auto sm:w-5/6 lg:w-1/2 max-lg:mb-8">
               <img src="./img/web-dev-group.svg" alt="columns vector" />
             </div>
-            <div class="lg:w-1/2">
-              <h1 class="mb-4 text-center text-3xl font-extrabold sm:text-left md:text-4xl lg:mb-10">Про нас</h1>
-              <div class="mb-10 text-sm sm:text-base md:text-lg">
+            <div id="about-content" class="lg:w-1/2">
+              <h2 class="text-center sm:text-left">Про нас</h2>
+              <div class="mb-10 text-base md:text-lg">
                 <p>
                   Ми створюємо ефективні та захоплюючі веб-сайти, що забезпечують наших клієнтів найвищим рівнем
                   присутності в онлайн просторі.
@@ -70,24 +59,17 @@
               </div>
               <div
                 class="flex flex-row flex-wrap items-center gap-3 text-center max-sm:justify-center sm:gap-5 sm:text-left">
-                <a
-                  href=""
-                  class="group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-primary px-6 py-4 text-base font-semibold text-white transition-all hover:bg-primary/80 hover:shadow-sm sm:text-lg">
-                  <span>Детальніше</span>
-                  <svg class="h-6 w-6 transition-all group-hover:translate-x-2">
-                    <use href="./sprites/sprite.svg#icon-arrow"></use>
-                  </svg>
-                </a>
+                @@include('components/btn-primary-arrow.html', { 'text': 'Детальніше', 'link': 'about.html' })
               </div>
             </div>
           </div>
         </section>
 
         <!-- services -->
-        <section class="bg-slate-100 py-8 sm:py-24">
-          <div class="mx-auto max-w-2xl text-center">
-            <h2 class="mb-4 text-3xl font-extrabold md:text-4xl lg:mb-10">Послуги</h2>
-            <p class="mb-16 text-lg">
+        <section class="bg-slate-100 py-section-sm sm:py-section-lg space-y-section-gap">
+          <div class="mx-auto max-w-2xl text-center px-4">
+            <h2>Послуги</h2>
+            <p class="text-base md:text-lg">
               Ми не просто створюємо веб-сайти. Ми створюємо цифрові майстерні та творимо досвід, який ваші відвідувачі
               ніколи не забудуть. Дозвольте нам взяти ваш бізнес на новий рівень в онлайн просторі.
             </p>
@@ -134,26 +116,17 @@
         </section>
 
         <!-- portfolio -->
-        <section class="bg-transparent py-8 sm:py-24">
-          <div class="container items-center gap-5 lg:flex lg:flex-row-reverse lg:gap-12">
+        <section class="bg-transparent py-section-sm sm:py-section-lg">
+          <div class="container items-center gap-section-gap lg:flex lg:flex-row-reverse ">
             <div class="relative w-full max-lg:mb-12 lg:w-1/2">
               <div>
-                <h1 class="mb-4 text-center text-3xl font-extrabold sm:text-left md:text-4xl lg:mb-10">Портфоліо</h1>
-                <div class="mb-4 text-sm sm:text-base md:text-lg lg:mb-10">
-                  <p>
+                <h2 class="text-center sm:text-left">Портфоліо</h2>
+                  <p class="mb-4 text-base md:text-lg lg:mb-10">
                     Ми завжди готові прийняти виклик нового проекту та втілити ваші ідеї у життя. Наше портфоліо - це
                     відображення нашої пристрасної роботи та здатності надавати креативні та ефективні рішення для
                     будь-яких завдань.
                   </p>
-                </div>
-                <a
-                  href=""
-                  class="group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-primary px-6 py-4 text-base font-semibold text-white transition-all hover:bg-primary/80 hover:shadow-sm sm:text-lg">
-                  <span>Детальніше</span>
-                  <svg class="h-6 w-6 transition-all group-hover:translate-x-2">
-                    <use href="./sprites/sprite.svg#icon-arrow"></use>
-                  </svg>
-                </a>
+                @@include('components/btn-primary-arrow.html', { 'text': 'Детальніше', 'link': 'portfolio.html' })
               </div>
             </div>
             <div class="w-full lg:w-1/2">
@@ -269,10 +242,10 @@
         </section>
 
         <!-- process -->
-        <section class="container bg-transparent py-8 sm:py-24">
-          <div class="container items-center gap-5 space-y-12 xl:flex xl:flex-row-reverse">
+        <section class="container bg-transparent py-section-sm sm:py-section-lg">
+          <div class="container items-center space-y-section-gap xl:flex xl:flex-row-reverse">
             <div class="w-full lg:w-5/6 xl:w-1/2">
-              <h2 class="mb-10 text-center text-3xl font-extrabold md:text-4xl">Процес розробки</h2>
+              <h2 class="text-center">Процес розробки</h2>
               <img src="./img/process.svg" alt="Процес розробки" />
             </div>
             <div class="w-full xl:w-1/2">
@@ -297,9 +270,9 @@
                     </svg>
                   </div>
                   <div class="flex-grow pl-4">
-                    <h2 class="mb-1 text-sm font-semibold tracking-wider text-slate-800">
+                    <h3 class="mb-1 text-base sm:text-lg font-semibold tracking-wider text-slate-800">
                       Крок 1: Консультація та Аналіз
-                    </h2>
+                    </h3>
                     <p class="text-sm leading-relaxed sm:text-base">
                       Ми розпочинаємо з ретельної консультації, де ми слухаємо ваші ідеї, потреби та вимоги. Разом ми
                       аналізуємо ваше завдання, визначаємо цілі та створюємо стратегію для подальшої роботи.
@@ -326,9 +299,9 @@
                     </svg>
                   </div>
                   <div class="flex-grow pl-4">
-                    <h2 class="mb-1 text-sm font-semibold tracking-wider text-slate-800">
+                    <h3 class="mb-1 text-base sm:text-lg font-semibold tracking-wider text-slate-800">
                       Крок 2: Дизайн та Концепція
-                    </h2>
+                    </h3>
                     <p class="text-sm leading-relaxed sm:text-base">
                       На цьому етапі наші дизайнери працюють над створенням вражаючого дизайну, який відображає ваш
                       бренд та цінності. Ми створюємо концепцію, яка захоплює вашу аудиторію та робить вас видатними в
@@ -356,9 +329,9 @@
                     </svg>
                   </div>
                   <div class="flex-grow pl-4">
-                    <h2 class="mb-1 text-sm font-semibold tracking-wider text-slate-800">
+                    <h3 class="mb-1 text-base sm:text-lg font-semibold tracking-wider text-slate-800">
                       Крок 3: Розробка та Тестування
-                    </h2>
+                    </h3>
                     <p class="text-sm leading-relaxed sm:text-base">
                       На цьому етапі ми перетворюємо дизайн у реальний продукт. Наші розробники використовують передові
                       технології та найкращі практики для створення функціонального та інтерактивного веб-сайту. Після
@@ -386,9 +359,9 @@
                     </svg>
                   </div>
                   <div class="flex-grow pl-4">
-                    <h2 class="mb-1 text-sm font-semibold tracking-wider text-slate-800">
+                    <h3 class="mb-1 text-base sm:text-lg font-semibold tracking-wider text-slate-800">
                       Крок 4: Впровадження та Оптимізація
-                    </h2>
+                    </h3>
                     <p class="text-sm leading-relaxed sm:text-base">
                       Після успішного тестування ми готові впровадити ваш веб-сайт у дію. Ми забезпечуємо його
                       безперебійну роботу, оптимізуємо продуктивність та готуємо його до запуску.
@@ -411,9 +384,9 @@
                     </svg>
                   </div>
                   <div class="flex-grow pl-4">
-                    <h2 class="mb-1 text-sm font-semibold tracking-wider text-slate-800">
+                    <h3 class="mb-1 text-base sm:text-lg font-semibold tracking-wider text-slate-800">
                       Крок 5: Підтримка та Розвиток
-                    </h2>
+                    </h3>
                     <p class="text-sm leading-relaxed sm:text-base">
                       Наша співпраця не закінчується після запуску. Ми пропонуємо технічну підтримку, оновлення та
                       розвиток вашого веб-сайту. Ми завжди готові вдосконалювати та розширювати вашу цифрову
@@ -427,11 +400,11 @@
         </section>
 
         <!-- blog -->
-        <section class="bg-slate-100 py-8 sm:py-24">
-          <div class="container space-y-12">
-            <div class="mx-auto max-w-2xl text-center">
-              <h2 class="mb-6 text-center text-3xl font-extrabold md:text-4xl">Блог</h2>
-              <p class="text-sm sm:text-base md:text-lg">
+        <section class="bg-slate-100 py-section-sm sm:py-section-lg">
+          <div class="container space-y-section-gap">
+            <div class="mx-auto max-w-2xl">
+              <h2 class="text-center">Блог</h2>
+              <p class="text-base md:text-lg">
                 В нашому блозі ми ділимося експертними порадами та інформацією про технологічні інновації в світі
                 веб-розробки. Ми допомагаємо вам бути в курсі останніх трендів та використовувати їх на користь вашого
                 бізнесу.
@@ -534,41 +507,34 @@
         </section>
 
         <!-- order -->
-        <section class="container bg-transparent py-8 sm:py-24">
-          <div class="items-center gap-5 lg:flex lg:flex-row lg:gap-12">
-            <div class="w-full lg:w-1/2">
+        <section class="container bg-transparent py-section-sm sm:py-section-lg">
+          <div class="items-center gap-section-gap lg:flex lg:flex-row">
+            <div data-da="#order-content,1024,1" class="w-full mx-auto sm:w-5/6 lg:w-1/2 max-lg:mb-8">
               <img src="./img/deal.svg" alt="deal" />
             </div>
-            <div class="w-full lg:w-1/2">
-              <h2 class="mb-10 text-3xl font-extrabold md:text-4xl">Замовити сайт</h2>
-              <p class="mb-10 text-sm sm:text-base md:text-lg">
+            <div id="order-content" class="w-full lg:w-1/2">
+              <h2 class="text-center sm:text-left">Замовити сайт</h2>
+              <p class="mb-10 text-base md:text-lg">
                 Готові реалізувати свою ідею у вигляді захоплюючого та функціонального веб-сайту? Просто заповніть нашу
                 <a href="order.html" class="font-medium text-secondary-dark hover:underline">форму замовлення</a>, і ми
                 зв'яжемося з вами найближчим часом, щоб обговорити ваші потреби та розпочати роботу над проектом.
               </p>
-              <a
-                href="order.html"
-                class="group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-secondary px-6 py-4 text-base font-semibold text-white transition-all hover:bg-secondary/80 hover:shadow-sm sm:text-lg">
-                <span>Замовити</span>
-                <svg class="h-6 w-6 transition-all group-hover:translate-x-2">
-                  <use href="./sprites/sprite.svg#icon-arrow"></use>
-                </svg>
-              </a>
+              @@include('components/btn-primary-arrow.html', { 'text': 'Замовити', 'link': 'order.html'})
             </div>
           </div>
         </section>
 
         <!-- comments -->
-        <section class="bg-slate-100 py-8 sm:py-24">
+        <section class="bg-slate-100 py-section-sm sm:py-section-lg">
           <div class="container">
             <div class="mx-auto mb-10 max-w-2xl text-center">
-              <h2 class="mb-6 text-center text-3xl font-extrabold md:text-4xl">Відгуки клієнтів</h2>
-              <p class="text-sm sm:text-base md:text-lg">
+              <h2 class="text-center">Відгуки клієнтів</h2>
+              <p class="text-base md:text-lg">
                 Наші клієнти - серце нашої діяльності. Ми пишаємося позитивними відгуками та довірою, яку вони надають
                 нам. Відгуки є свідченням нашої здатності зробити ваші ідеї реальністю.
               </p>
             </div>
-            <div class="  ">
+            <div>
               <div class="full-slider">
                 <div class="mb-4 flex w-full justify-end gap-3 max-sm:hidden">
                   <button
@@ -700,9 +666,9 @@
         </section>
 
         <!-- FAQ -->
-        <section class="container bg-transparent py-8 sm:py-24">
-          <h2 class="mb-10 text-center text-3xl font-extrabold md:text-4xl">Залишилися питання?</h2>
-          <div class="items-center flex flex-col lg:flex-row gap-12">
+        <section class="container bg-transparent py-section-sm sm:py-section-lg">
+          <h2 class="text-center">Залишилися питання?</h2>
+          <div class="items-center flex flex-col lg:flex-row gap-section-gap">
             <div class="w-full sm:w-3/5 mx-auto lg:w-1/2">
               <img src="./img/yes-no.svg" alt="yes-no" />
             </div>

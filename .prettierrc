@@ -4,15 +4,14 @@
   "endOfLine": "lf",
   "bracketSameLine": true,
   "htmlWhitespaceSensitivity": "css",
-  "printWidth": 120,
+  "printWidth": 180,
   "quoteProps": "as-needed",
   "semi": true,
   "singleQuote": false,
   "tabWidth": 2,
   "trailingComma": "all",
-  "jsxBracketSameLine": true,
+  "jsxBracketSameLine": false,
   "jsxSingleQuote": false,
-  "singleAttributePerLine": false,
   "plugins": ["prettier-plugin-tailwindcss"]
 }
 

@@ -1,6 +1,6 @@
 /* Import lib styles  */
 @import "../../node_modules/swiper/swiper.scss";
-@import '../../node_modules/swiper/modules/navigation/navigation.scss';
+@import "../../node_modules/swiper/modules/navigation/navigation.scss";
 @import "../../node_modules/swiper/modules/autoplay/autoplay.scss";
 @import "../../node_modules/swiper/modules/pagination/pagination.scss";
 @import "../../node_modules/swiper/modules/parallax/parallax.scss";
@@ -16,9 +16,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply font-inter text-base text-slate-800;
+
+@layer base {
+  body {
+    @apply font-inter text-base text-slate-800;
+  }
+
+  h2 {
+    @apply mb-6 text-3xl font-extrabold md:text-4xl md:mb-10;
+  }
 }
+
+
 
 .particles-js-canvas-el {
   @apply fixed left-0 top-0 -z-10 h-full w-full;
@@ -56,13 +65,13 @@ body {
 */
 
 .half-slider {
-  @apply w-full sm:w-5/6 overflow-hidden custom-shadow rounded-lg mx-auto ;
+  @apply custom-shadow mx-auto w-full overflow-hidden rounded-lg sm:w-5/6;
 }
 .half-wrapper {
   @apply flex;
 }
 .half-slide {
-  @apply shrink-0 relative text-white;
+  @apply relative shrink-0 text-white;
 }
 
 .pagination {
@@ -75,21 +84,19 @@ body {
   }
 }
 
-
 .full-slider {
-  @apply w-full overflow-hidden -m-3 p-3;
+  @apply -m-3 w-full overflow-hidden p-3;
 }
 .full-wrapper {
   @apply flex;
 }
 .full-slide {
-  @apply shrink-0 relative text-sm sm:text-base;
+  @apply relative shrink-0 text-sm sm:text-base;
   &.swiper-slide-next {
-    @apply max-sm:opacity-50 transition-opacity duration-200;
+    @apply transition-opacity duration-200 max-sm:opacity-50;
   }
 }
 
-
 .active-spoiler svg {
-  @apply rotate-180 ;
+  @apply rotate-180;
 }

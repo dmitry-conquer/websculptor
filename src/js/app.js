@@ -7,7 +7,7 @@ import { initHeader } from "./modules/header.js";
 import { useDynamicAdapt } from "./modules/dynamicAdapt.js";
 // import gsap from "gsap";
 // import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-// import AOS from 'aos';
+import AOS from 'aos';
 // import fslightbox from 'fslightbox';
 // import { CountUp } from '../../node_modules/countup.js/dist/countUp.js';
 // import MicroModal from 'micromodal';
@@ -16,6 +16,7 @@ import "particles.js";
 
 // > - - - - - - - - [app development] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function app() {
+  AOS.init();
   initHeader();
   useDynamicAdapt("max");
   useSliders();
