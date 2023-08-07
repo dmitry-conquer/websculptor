@@ -6,7 +6,7 @@
 @import "../../node_modules/swiper/modules/parallax/parallax.scss";
 // @import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 // @import '../../node_modules/nouislider/dist/nouislider.min';
-// @import '../../node_modules/aos/src/sass/aos.scss';
+@import '../../node_modules/aos/src/sass/aos.scss';
 // @import '../../node_modules/choices.js/src/styles/choices.scss';
 // "./lib/tips";
 
@@ -18,6 +18,9 @@
 
 
 @layer base {
+  html {
+    @apply scroll-smooth scroll-p-16;
+  }
   body {
     @apply font-inter text-base text-slate-800;
   }
@@ -54,10 +57,6 @@
   .custom-shadow {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
-  // .responsive-grid {
-  //   display: grid;
-  //   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  // }
 }
 
 /*
@@ -100,3 +99,17 @@
 .active-spoiler svg {
   @apply rotate-180;
 }
+
+
+
+/*
+  search
+*/
+
+.searchwp-live-search-results .searchwp-live-search-results-showing {
+
+}
+.searchwp-live-search-no-min-chars:after {
+  content: "Продовжуйте писати";
+}
+

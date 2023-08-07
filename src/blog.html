@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+  @@include('components/head.html', { 'title': 'Головна' })
+  <body id="particles-js">
+    <div class="flex min-h-screen flex-col overflow-hidden">
+      @@include('components/header.html', { })
+      <div class="container flex grow gap-6 py-section-lg sm:pt-44 lg:gap-8">
+        <main class="grow">
+          <div>
+            <button id="open-sidebar" type="button" class="mb-4 inline-flex items-center gap-2 md:hidden">
+              <svg class="h-6 w-6">
+                <use href="./sprites/sprite.svg#icon-sidebar"></use>
+              </svg>
+              <span>Фільтр</span>
+            </button>
+            <section
+              class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6 xl:grid-cols-4 xl:[&>*:nth-child(1)]:col-span-2 xl:[&>*:nth-child(1)]:row-span-2 xl:[&>*:nth-child(2)]:col-span-2 xl:[&>*:nth-child(2)]:row-span-2">
+              <article class="custom-shadow rounded-md">
+                <div href="" class="bg-white">
+                  <a href="single.html">
+                    <img src="./img/blog/post1.webp" alt="post1" class="h-full w-full object-cover transition" />
+                  </a>
+                  <div class="p-4">
+                    <div class="mb-3 space-y-2">
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">SEO</a>
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">Framework</a>
+                    </div>
+                    <h3 class="mb-1 text-base font-semibold">Lorem, ipsum dolor.</h3>
+                    <p class="mb-3 line-clamp-3 text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, illum assumenda aut delectus blanditiis quis consectetur enim iusto neque saepe.
+                    </p>
+                    <a href="single.html" class="group inline-flex items-center gap-2">
+                      <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                      <svg class="h-5 w-5 text-slate-800 transition group-hover:translate-x-2 group-hover:text-secondary">
+                        <use href="./sprites/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="custom-shadow rounded-md">
+                <div href="" class="bg-white">
+                  <a href="single.html">
+                    <img src="./img/blog/post2.webp" alt="post1" class="h-full w-full object-cover transition" />
+                  </a>
+                  <div class="p-4">
+                    <div class="mb-3 space-y-2">
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">SEO</a>
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">Framework</a>
+                    </div>
+                    <h3 class="mb-1 text-base font-semibold">Lorem, ipsum dolor.</h3>
+                    <p class="mb-3 line-clamp-3 text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, illum assumenda aut delectus blanditiis quis consectetur enim iusto neque saepe.
+                    </p>
+                    <a href="single.html" class="group inline-flex items-center gap-2">
+                      <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                      <svg class="h-5 w-5 text-slate-800 transition group-hover:translate-x-2 group-hover:text-secondary">
+                        <use href="./sprites/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="custom-shadow rounded-md">
+                <div href="" class="bg-white">
+                  <a href="single.html">
+                    <img src="./img/blog/post3.webp" alt="post1" class="h-full w-full object-cover transition" />
+                  </a>
+                  <div class="p-4">
+                    <div class="mb-3 space-y-2">
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">SEO</a>
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">Framework</a>
+                    </div>
+                    <h3 class="mb-1 text-base font-semibold">Lorem, ipsum dolor.</h3>
+                    <p class="mb-3 line-clamp-3 text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, illum assumenda aut delectus blanditiis quis consectetur enim iusto neque saepe.
+                    </p>
+                    <a href="single.html" class="group inline-flex items-center gap-2">
+                      <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                      <svg class="h-5 w-5 text-slate-800 transition group-hover:translate-x-2 group-hover:text-secondary">
+                        <use href="./sprites/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="custom-shadow rounded-md">
+                <div href="" class="bg-white">
+                  <a href="single.html">
+                    <img src="./img/blog/post4.webp" alt="post1" class="h-full w-full object-cover transition" />
+                  </a>
+                  <div class="p-4">
+                    <div class="mb-3 space-y-2">
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">SEO</a>
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">Framework</a>
+                    </div>
+                    <h3 class="mb-1 text-base font-semibold">Lorem, ipsum dolor.</h3>
+                    <p class="mb-3 line-clamp-3 text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, illum assumenda aut delectus blanditiis quis consectetur enim iusto neque saepe.
+                    </p>
+                    <a href="single.html" class="group inline-flex items-center gap-2">
+                      <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                      <svg class="h-5 w-5 text-slate-800 transition group-hover:translate-x-2 group-hover:text-secondary">
+                        <use href="./sprites/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="custom-shadow rounded-md">
+                <div href="" class="bg-white">
+                  <a href="single.html">
+                    <img src="./img/blog/post5.webp" alt="post1" class="h-full w-full object-cover transition" />
+                  </a>
+                  <div class="p-4">
+                    <div class="mb-3 space-y-2">
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">SEO</a>
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">Framework</a>
+                    </div>
+                    <h3 class="mb-1 text-base font-semibold">Lorem, ipsum dolor.</h3>
+                    <p class="mb-3 line-clamp-3 text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, illum assumenda aut delectus blanditiis quis consectetur enim iusto neque saepe.
+                    </p>
+                    <a href="single.html" class="group inline-flex items-center gap-2">
+                      <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                      <svg class="h-5 w-5 text-slate-800 transition group-hover:translate-x-2 group-hover:text-secondary">
+                        <use href="./sprites/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="custom-shadow rounded-md">
+                <div href="" class="bg-white">
+                  <a href="single.html">
+                    <img src="./img/blog/post6.webp" alt="post1" class="h-full w-full object-cover transition" />
+                  </a>
+                  <div class="p-4">
+                    <div class="mb-3 space-y-2">
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">SEO</a>
+                      <a href="" class="rounded-md bg-slate-200 px-2 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-600 hover:text-white">Framework</a>
+                    </div>
+                    <h3 class="mb-1 text-base font-semibold">Lorem, ipsum dolor.</h3>
+                    <p class="mb-3 line-clamp-3 text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, illum assumenda aut delectus blanditiis quis consectetur enim iusto neque saepe.
+                    </p>
+                    <a href="single.html" class="group inline-flex items-center gap-2">
+                      <span class="text-sm font-bold transition group-hover:text-secondary">Читати</span>
+                      <svg class="h-5 w-5 text-slate-800 transition group-hover:translate-x-2 group-hover:text-secondary">
+                        <use href="./sprites/sprite.svg#icon-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </main>
+        @@include('components/sidebar.html')
+      </div>
+      @@include('components/footer.html', { })
+    </div>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
+  </body>
+</html>

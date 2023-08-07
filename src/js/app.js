@@ -2,7 +2,8 @@
 import { useSpoiler } from './modules/spoilers.js';
 // import { initTabs } from './modules/tabs.js';
 import { useSliders } from "./modules/sliders.js";
-import { initHeader } from "./modules/header.js";
+import { useHeader } from "./modules/header.js";
+import { useSidebar } from "./modules/sidebar.js";
 // import { initModals, openModalIf } from './modules/modals.js';
 import { useDynamicAdapt } from "./modules/dynamicAdapt.js";
 // import gsap from "gsap";
@@ -16,11 +17,17 @@ import "particles.js";
 
 // > - - - - - - - - [app development] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function app() {
-  AOS.init();
-  initHeader();
+  AOS.init({
+    duration: 600,
+    easing: 'ease-is-sine',
+    disable: 'mobile',
+  });
+  useHeader();
   useDynamicAdapt("max");
   useSliders();
   useSpoiler();
+  useSidebar();
+
 
   if (document.getElementById("hero-title")) {
     const typed = new Typed("#hero-title", {
@@ -36,9 +43,7 @@ function app() {
     });
   }
 
-  particlesJS.load("particles-js", "./public/particles.json", function () {
-    console.log("callback - particles.js config loaded");
-  });
+  particlesJS.load("particles-js", "./public/particles.json");
 }
 
 document.addEventListener("DOMContentLoaded", app);

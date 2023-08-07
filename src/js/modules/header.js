@@ -1,4 +1,4 @@
-export function initHeader() {
+export function useHeader() {
   const header = document.getElementById("main-header");
   if (header) {
     const openHeaderMenuButton = document.getElementById("open-menu");
@@ -44,14 +44,8 @@ export function initHeader() {
     function toggleMenu() {
       document.body.classList.toggle("lock");
       openHeaderMenuButton.classList.toggle("active-header-icon");
-      headerMenu.classList.toggle("max-lg:left-full");
-      headerMenu.classList.toggle("left-0");
+      headerMenu.classList.toggle("-translate-x-full");
       tabLoopControl();
-      // const menuItems = headerMenu.querySelectorAll("._anim-menu-item");
-      // menuItems.forEach((item, i) => {
-      //   item.style.setProperty("--i", `${i}`);
-      //   item.classList.toggle("_animated-item");
-      // });
     }
 
     // header keybord controll
