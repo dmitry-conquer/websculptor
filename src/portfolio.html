@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="uk">
-  @@include('components/head.html', { 'title': 'Головна' })
+  @@include('components/head.html', { 'title': 'портфоліо' })
   <body id="particles-js">
     <div class="flex min-h-screen flex-col overflow-hidden">
       @@include('components/header.html', { })
-      <div class="container flex grow gap-6 py-section-lg sm:pt-44 lg:gap-8">
-        <main class="grow">
+      <main class="grow">
+        <div class="container py-section-lg sm:pt-44 lg:gap-8">
           <section>
-            <div class="max-w-2xl mb-10">
-              <h1 class="font-bold text-3xl lg:text-4xl mb-4">Відкрийте для себе світ інсайтів та експертної думки</h1>
+            <div class="mb-10 max-w-2xl">
+              <h1 class="mb-4 text-3xl font-bold lg:text-4xl">Портфоліо, що говорить за себе</h1>
               <p class="">
-                Ласкаво просимо до нашого блогу, де ми ділимося цінними знаннями, трендами та інсайтами зі світу веб-розробки, дизайну та цифрового маркетингу. Тут ви знайдете
-                корисні статті, поради та ресурси, які допоможуть вам розширити горизонти у цифровому просторі.
+                Ми розповідаємо історії успіху через код та дизайн. Ознайомтеся з нашим вражаючим портфоліо, де кожен проект - це мініатюрна майстерня інновацій та творчості.
               </p>
             </div>
-            <button id="open-sidebar" type="button" class="mb-4 inline-flex items-center gap-2 lg:hidden">
-              <svg class="h-6 w-6">
-                <use href="./sprites/sprite.svg#icon-sidebar"></use>
-              </svg>
-              <span>Фільтр</span>
-            </button>
           </section>
           <section>
-            <h2 class="sr-only">Записи блогу</h2>
+            <h2 class="sr-only">Роботи портфоліо</h2>
             <div
               class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6 xl:grid-cols-4 xl:[&>*:nth-child(1)]:col-span-2 xl:[&>*:nth-child(1)]:row-span-2 xl:[&>*:nth-child(2)]:col-span-2 xl:[&>*:nth-child(2)]:row-span-2">
               <article class="custom-shadow rounded-md">
@@ -184,9 +177,8 @@
               </ul>
             </nav>
           </section>
-        </main>
-        @@include('components/sidebar.html')
-      </div>
+        </div>
+      </main>
       @@include('components/footer.html', { })
     </div>
     <script type="module" crossorigin src="./js/app.min.js"></script>

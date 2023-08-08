@@ -47,6 +47,9 @@ function app() {
       typeSpeed: 45,
       startDelay: 500,
       loop: false,
+      showCursor: true,
+      cursorChar: '_',
+      shuffle: true
     });
   }
 

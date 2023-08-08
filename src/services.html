@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+  @@include('components/head.html', { 'title': 'портфоліо' })
+  <body id="particles-js">
+    <div class="flex min-h-screen flex-col overflow-hidden">
+      @@include('components/header.html', { })
+      <main class="grow">
+        <div class="">
+          <!-- hero -->
+          <section class="bg-slate-100 py-section-lg sm:pt-44 lg:gap-8">
+            <div class="container mb-10">
+              <div class="max-w-2xl">
+                <h1 class="mb-4 text-3xl font-bold lg:text-5xl">Які послуги ми надаємо?</h1>
+                <p>
+                  Наша команда пропонує широкий спектр послуг, щоб допомогти вам реалізувати ваші цифрові амбіції та здійснити вражаючий відлік у онлайн світі. Ми вміємо
+                  об'єднувати креативність, технічну експертизу та стратегічне мислення, щоб допомогти вам досягти вашої мети.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- web-designe -->
+          <section class="container bg-transparent py-section-sm sm:py-section-lg">
+            <div class="mb-12 items-center gap-section-gap lg:flex lg:flex-row">
+              <div class="mx-auto w-full max-lg:mb-8 sm:w-5/6 lg:w-1/2">
+                <img src="./img/create-designe.svg" alt="create-designe" />
+              </div>
+              <div class="w-full lg:w-1/2">
+                <h2 class="text-center sm:text-left">Веб-Дизайн та розробка</h2>
+                <p class="mb-4 text-base md:text-lg lg:mb-10">
+                  Наші талановиті дизайнери та розробники створюють вражаючі та інтуїтивні веб-сайти. Ми дотримуємося сучасних трендів, забезпечуючи вас зручністю взаємодії та
+                  вражаючою візуальною привабливістю.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-12 p-6">
+              <div class="border bg-slate-100 p-6">
+                <div class="text-center">
+                  <h2 class="mb-4">Вражаючі слайдери</h2>
+                  <p class="mb-4 text-base md:text-lg lg:mb-8">
+                    Динамічні сладйдери дозволить вам подати вашу інформацію та вміст у найбільш вражаючому та ефективному способі. Слайдери - це не просто рядок зображень, а
+                    потужний інструмент для розповіді вашої історії, залучення уваги відвідувачів та створення незабутнього першого враження.
+                  </p>
+                </div>
+                <div>
+                  <div class="half-slider">
+                    <div class="half-wrapper">
+                      <div class="half-slide relative">
+                        <img src="./img/stock/img3.webp" class="h-full w-[120%] object-cover" alt="cover_stomatolog" />
+                        <h3
+                          data-swiper-parallax-x="-80%"
+                          class="absolute bottom-5 right-5 max-w-xs rounded-lg bg-primary/70 px-4 py-2 text-center text-lg font-extrabold sm:mx-10 md:text-4xl">
+                          Візуальна динаміка
+                        </h3>
+                      </div>
+                      <div class="half-slide relative">
+                        <img src="./img/stock/img2.webp" class="h-full w-[120%] object-cover" alt="cover_psycho" />
+                        <h3
+                          data-swiper-parallax-x="-80%"
+                          class="absolute bottom-5 right-5 max-w-xs rounded-lg bg-primary/70 px-4 py-2 text-center text-lg font-extrabold sm:mx-10 md:text-4xl">
+                          Зручне управління
+                        </h3>
+                      </div>
+                      <div class="half-slide relative">
+                        <img src="./img/stock/img1.webp" class="h-full w-[120%] object-cover" alt="factum_cover" />
+                        <h3
+                          data-swiper-parallax-x="-80%"
+                          class="absolute bottom-5 right-5 max-w-xs rounded-lg bg-primary/70 px-4 py-2 text-center text-lg font-extrabold sm:mx-10 md:text-4xl">
+                          Збільшення залученості
+                        </h3>
+                      </div>
+                      <div class="half-slide relative">
+                        <img src="./img/stock/img4.webp" class="h-full w-[120%] object-cover" alt="cover_tur" />
+                        <h3
+                          data-swiper-parallax-x="-80%"
+                          class="absolute bottom-5 right-5 max-w-xs rounded-lg bg-primary/70 px-4 py-2 text-center text-lg font-extrabold sm:mx-10 md:text-4xl">
+                          Зростання конверсій
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pagination"></div>
+                </div>
+              </div>
+              <div class="border bg-slate-100 p-6">
+                <div class="text-center">
+                  <h2 class="mb-4">Анімації будь-якої складності</h2>
+                  <p class="mb-4 text-base md:text-lg lg:mb-8">
+                    Наші креативці розробляють захоплюючі інтерактивні веб-елементи та анімацію, що залишають позитивне враження на відвідувачів та підсилюють ефективність вашого
+                    сайту.
+                  </p>
+                </div>
+                <div class="w-3/5 mx-auto">
+                  <img src="./img/baloon.svg" alt="baloon" class="">
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      @@include('components/footer.html', { })
+    </div>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
+  </body>
+</html>

@@ -1,8 +1,10 @@
 <aside
   id="sidebar"
-  class="max-lg:custom-shadow w-[290px] space-y-6 pb-6 transition-all overflow-y-auto duration-500 ease-in-out max-lg:fixed max-lg:left-0  max-lg:top-0 max-lg:-translate-x-full max-lg:h-screen max-lg:bg-slate-50 max-lg:px-6 max-lg:pt-section-xl max-sm:pt-section-lg lg:shrink-0 md:w-80">
-  @@include('author.html')
-  @@include('searchform.html')
-  @@include('categories.html')
-  @@include('authors.html')
+  class="max-lg:custom-shadow w-[290px] pb-6 transition-all overflow-y-auto duration-500 ease-in-out max-lg:fixed max-lg:left-0  max-lg:top-0 max-lg:-translate-x-full max-lg:h-screen max-lg:bg-slate-50 max-lg:px-6 max-lg:pt-section-xl max-sm:pt-section-lg lg:shrink-0 md:w-80">
+  <div class="space-y-6  p-1">
+    @@include('author.html')
+    @@include('searchform.html')
+    @@include('categories.html')
+    @@include('authors.html')
+  </div>
 </aside>
