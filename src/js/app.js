@@ -1,5 +1,5 @@
 // import { hasErrors } from './modules/forms.js';
-import { useSpoiler } from './modules/spoilers.js';
+import { useSpoiler } from "./modules/spoilers.js";
 // import { initTabs } from './modules/tabs.js';
 import { useSliders } from "./modules/sliders.js";
 import { useHeader } from "./modules/header.js";
@@ -8,7 +8,7 @@ import { useSidebar } from "./modules/sidebar.js";
 import { useDynamicAdapt } from "./modules/dynamicAdapt.js";
 // import gsap from "gsap";
 // import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-import AOS from 'aos';
+import AOS from "aos";
 // import fslightbox from 'fslightbox';
 // import { CountUp } from '../../node_modules/countup.js/dist/countUp.js';
 // import MicroModal from 'micromodal';
@@ -19,8 +19,8 @@ import "particles.js";
 function app() {
   AOS.init({
     duration: 600,
-    easing: 'ease-is-sine',
-    disable: 'mobile',
+    easing: "ease-is-sine",
+    disable: "mobile",
   });
   useHeader();
   useDynamicAdapt("max");
@@ -28,18 +28,25 @@ function app() {
   useSpoiler();
   useSidebar();
 
-
   if (document.getElementById("hero-title")) {
     const typed = new Typed("#hero-title", {
-      strings: [
-        "привернути увагу віртуального світу!",
-        "втілити ідеї в онлайні!",
-        "забезпечити вражаючий веб-профіль!",
-      ],
+      strings: ["привернути увагу віртуального світу!", "втілити ідеї в онлайні!", "забезпечити вражаючий веб-профіль!"],
       typeSpeed: 50,
       backSpeed: 20,
       startDelay: 0,
       loop: true,
+    });
+  }
+
+  if (document.getElementById("author-desc")) {
+    const target = document.getElementById("author-desc");
+    const targetText = target.dataset.text;
+    console.log(targetText);
+    const typed = new Typed("#author-desc", {
+      strings: [targetText],
+      typeSpeed: 45,
+      startDelay: 500,
+      loop: false,
     });
   }
 

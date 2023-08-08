@@ -15,7 +15,7 @@ export function useSidebar() {
     });
 
     document.addEventListener("click", e => {
-      if (!sidebar.classList.contains("-translate-x-full") && !e.target.closest("#sidebar") && !e.target.closest("#open-sidebar")) {
+      if (!sidebar.classList.contains("max-lg:-translate-x-full") && !e.target.closest("#sidebar") && !e.target.closest("#open-sidebar")) {
         toggleSidebar();
         e.preventDefault();
       }
@@ -23,7 +23,7 @@ export function useSidebar() {
 
     function toggleSidebar() {
       document.body.classList.toggle("lock");
-      sidebar.classList.toggle("-translate-x-full");
+      sidebar.classList.toggle("max-lg:-translate-x-full");
     }
   }
 }

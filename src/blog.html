@@ -6,14 +6,24 @@
       @@include('components/header.html', { })
       <div class="container flex grow gap-6 py-section-lg sm:pt-44 lg:gap-8">
         <main class="grow">
-          <div>
-            <button id="open-sidebar" type="button" class="mb-4 inline-flex items-center gap-2 md:hidden">
+          <section>
+            <div class="max-w-2xl mb-10">
+              <h1 class="font-bold text-3xl mb-4">Відкрийте для себе світ інсайтів та експертної думки</h1>
+              <p class="">
+                Ласкаво просимо до нашого блогу, де ми ділимося цінними знаннями, трендами та інсайтами зі світу веб-розробки, дизайну та цифрового маркетингу. Тут ви знайдете
+                корисні статті, поради та ресурси, які допоможуть вам розширити горизонти у цифровому просторі.
+              </p>
+            </div>
+            <button id="open-sidebar" type="button" class="mb-4 inline-flex items-center gap-2 lg:hidden">
               <svg class="h-6 w-6">
                 <use href="./sprites/sprite.svg#icon-sidebar"></use>
               </svg>
               <span>Фільтр</span>
             </button>
-            <section
+          </section>
+          <section>
+            <h2 class="sr-only">Записи блогу</h2>
+            <div
               class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6 xl:grid-cols-4 xl:[&>*:nth-child(1)]:col-span-2 xl:[&>*:nth-child(1)]:row-span-2 xl:[&>*:nth-child(2)]:col-span-2 xl:[&>*:nth-child(2)]:row-span-2">
               <article class="custom-shadow rounded-md">
                 <div href="" class="bg-white">
@@ -153,8 +163,27 @@
                   </div>
                 </div>
               </article>
-            </section>
-          </div>
+            </div>
+            <nav class="mt-12 flex justify-center sm:justify-end">
+              <ul class="flex gap-2 sm:gap-3">
+                <li class="">
+                  <a href="#" class="rounded-lg bg-slate-200 px-3 py-1 text-sm transition-colors hover:bg-slate-600 hover:text-white sm:py-1.5 sm:text-base">Назад</a>
+                </li>
+                <li class="">
+                  <a href="#" class="rounded-lg bg-slate-200 px-3 py-1 text-sm transition-colors hover:bg-slate-600 hover:text-white sm:py-1.5 sm:text-base">1</a>
+                </li>
+                <li class="">
+                  <a href="#" class="rounded-lg bg-slate-200 px-3 py-1 text-sm transition-colors hover:bg-slate-600 hover:text-white sm:py-1.5 sm:text-base">2</a>
+                </li>
+                <li class="">
+                  <a href="#" class="rounded-lg bg-slate-200 px-3 py-1 text-sm transition-colors hover:bg-slate-600 hover:text-white sm:py-1.5 sm:text-base">3</a>
+                </li>
+                <li class="">
+                  <a href="#" class="rounded-lg bg-slate-200 px-3 py-1 text-sm transition-colors hover:bg-slate-600 hover:text-white sm:py-1.5 sm:text-base">Вперед</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
         </main>
         @@include('components/sidebar.html')
       </div>
