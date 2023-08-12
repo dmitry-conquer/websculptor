@@ -6,31 +6,29 @@
 @import "../../node_modules/swiper/modules/parallax/parallax.scss";
 // @import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 // @import '../../node_modules/nouislider/dist/nouislider.min';
-@import '../../node_modules/aos/src/sass/aos.scss';
+@import "../../node_modules/aos/src/sass/aos.scss";
 // @import '../../node_modules/choices.js/src/styles/choices.scss';
 // "./lib/tips";
 
 @import "fonts";
+@import "lib/tips";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   html {
-    @apply scroll-smooth scroll-p-16;
+    @apply scroll-p-16 scroll-smooth;
   }
   body {
     @apply font-inter text-base text-slate-800;
   }
 
   h2 {
-    @apply mb-6 text-3xl font-extrabold md:text-4xl md:mb-10;
+    @apply mb-6 text-3xl font-extrabold md:mb-10 md:text-4xl;
   }
 }
-
-
 
 .particles-js-canvas-el {
   @apply fixed left-0 top-0 -z-10 h-full w-full;
@@ -56,6 +54,54 @@
 @layer utilities {
   .custom-shadow {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .perspective {
+    perspective: 1000px;
+  }
+  .transform-perspective {
+    transition: all 0.2s linear;
+    transform-style: preserve-3d;
+  }
+  .toggle-checkbox {
+    input:checked + label {
+      &::after {
+        transform: translateY(-50%) translateX(100%);
+        background: #fff;
+      }
+      &::before {
+        background: #263238;
+        border: 1px solid transparent;
+      }
+    }
+    label {
+    cursor: pointer;
+
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      &::before {
+        content: "";
+        width: 40px;
+        height: 22px;
+        flex-shrink: 0;
+        background: #fff;
+        border: 1px solid #8f8f8f;
+        border-radius: 15px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background: #263238;
+        top: 50%;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        left: 2px;
+        transition: transform .3s ease;
+      }
+    }
   }
 }
 
@@ -100,16 +146,27 @@
   @apply rotate-180;
 }
 
-
+#section-services {
+  .active-spoiler {
+    @apply rounded-bl-none rounded-br-none  border-b-slate-200;
+    #service-arrow {
+      @apply bg-blue-500;
+    }
+    #service-price {
+      @apply text-blue-500;
+    }
+  }
+  .active-spoiler-content {
+    @apply border border-t-0;
+  }
+}
 
 /*
   search
 */
 
 .searchwp-live-search-results .searchwp-live-search-results-showing {
-
 }
 .searchwp-live-search-no-min-chars:after {
   content: "Продовжуйте писати";
 }
-

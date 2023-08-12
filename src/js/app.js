@@ -14,6 +14,7 @@ import AOS from "aos";
 // import MicroModal from 'micromodal';
 import Typed from "typed.js";
 import "particles.js";
+import { useParallax } from "./modules/parallax.js";
 
 // > - - - - - - - - [app development] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function app() {
@@ -27,6 +28,7 @@ function app() {
   useSliders();
   useSpoiler();
   useSidebar();
+  useParallax();
 
   if (document.getElementById("hero-title")) {
     const typed = new Typed("#hero-title", {
@@ -54,6 +56,9 @@ function app() {
   }
 
   particlesJS.load("particles-js", "./public/particles.json");
+
+
+
 }
 
 document.addEventListener("DOMContentLoaded", app);

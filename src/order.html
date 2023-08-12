@@ -10,70 +10,166 @@
           <div class="mx-auto mb-16 max-w-2xl text-center">
             <h2 class="mb-6 text-3xl font-extrabold md:text-4xl">Замовити сайт</h2>
             <p class="text-sm sm:text-base md:text-lg">
-              Готові реалізувати свою ідею у вигляді захоплюючого та функціонального веб-сайту? Просто заповніть нашу
-              форму замовлення, і ми зв'яжемося з вами найближчим часом, щоб обговорити ваші потреби та розпочати роботу
-              над проектом.
+              Готові реалізувати свою ідею у вигляді захоплюючого та функціонального веб-сайту? Просто заповніть нашу форму замовлення, і ми зв'яжемося з вами найближчим часом, щоб
+              обговорити ваші потреби та розпочати роботу над проектом.
             </p>
           </div>
           <div>
-            <form action="" class="custom-shadow flex flex-wrap gap-4 rounded-md bg-white p-6">
-              <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
-                <label for="form-name" class="sr-only"></label>
-                <input
-                  required
-                  autocomplete="off"
-                  id="form-name"
-                  type="text"
-                  name="form-name"
-                  class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
-                <span
-                  class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
-                  >Ім'я</span
-                >
+            <form action="" class="custom-shadow space-y-14 rounded-md bg-white p-6">
+              <div class="">
+                <h2 class="mb-4 text-xl font-semibold">Загальні</h2>
+                <div class="flex w-full flex-wrap gap-4">
+                  <!-- firstname -->
+                  <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
+                    <label for="form-name" class="sr-only"></label>
+                    <input required autocomplete="off" id="form-name" type="text" name="form-name" class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
+                    <span
+                      class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                      >Ім'я</span
+                    >
+                  </div>
+                  <!-- lastname -->
+                  <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
+                    <label for="form-surname" class="sr-only"></label>
+                    <input
+                      required
+                      autocomplete="off"
+                      id="form-surname"
+                      name="form-surname"
+                      type="text"
+                      class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
+                    <span
+                      class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                      >Прізвище</span
+                    >
+                  </div>
+                  <!-- email -->
+                  <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
+                    <label for="form-email" class="sr-only"></label>
+                    <input
+                      required
+                      autocomplete="off"
+                      id="form-email"
+                      name="form-email"
+                      type="text"
+                      inputmode="email"
+                      class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
+                    <span
+                      class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                      >Пошта</span
+                    >
+                  </div>
+                  <!-- tel -->
+                  <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
+                    <label for="form-tel" class="sr-only"></label>
+                    <input
+                      required
+                      autocomplete="off"
+                      id="form-tel"
+                      name="form-tel"
+                      type="text"
+                      inputmode="tel"
+                      class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
+                    <span
+                      class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                      >Телефон</span
+                    >
+                  </div>
+                  <!-- site type -->
+                  <div class="relative w-full grow rounded-md border transition-colors focus-within:border-secondary/60">
+                    <label for="form-tel" class="sr-only"></label>
+                    <select
+                      name=""
+                      id="form-site-type"
+                      name="form-site-type"
+                      class="w-full rounded-md bg-white px-4 py-3 font-medium text-slate-600 focus:border-0 focus:outline-none">
+                      <option selected value="none">Оберіть тип сайту</option>
+                      <option value="site-blog">Блог</option>
+                      <option value="site-present">Сайт візитка</option>
+                      <option value="site-corp">Корпоративний сайт</option>
+                      <option value="site-news">Новинний портал</option>
+                      <option value="site-cources">Онлайн курси</option>
+                      <option value="site-food">Ресторан або кафе</option>
+                    </select>
+                  </div>
+
+                  <!-- site name -->
+                  <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
+                    <label for="form-site-name" class="sr-only"></label>
+                    <input
+                      required
+                      autocomplete="off"
+                      id="form-site-name"
+                      name="form-site-name"
+                      type="text"
+                      inputmode="tel"
+                      class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
+                    <span
+                      class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                      >Назва сайту (напр. "Сайт по продажу авто"...)</span
+                    >
+                  </div>
+
+                  <!-- designe description -->
+                  <div class="relative w-full rounded-md border transition-colors focus-within:border-secondary/60">
+                    <label for="form-tel" class="sr-only"></label>
+                    <textarea
+                      name="form-designe-desc"
+                      id="form-designe-desc"
+                      class="w-full resize-none rounded-md px-4 py-3 focus:border-0 focus:outline-none"
+                      placeholder="Вподобання стосовно стилю та дазайну сайту"></textarea>
+                  </div>
+                </div>
               </div>
-              <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
-                <label for="form-surname" class="sr-only"></label>
-                <input
-                  required
-                  autocomplete="off"
-                  id="form-surname"
-                  name="form-surname"
-                  type="text"
-                  class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
-                <span
-                  class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
-                  >Прізвище</span
-                >
+
+              <div class="w-full">
+                <h2 class="mb-4 text-xl font-semibold">Дизайн</h2>
+                <div>
+                  <div class="toggle-checkbox mb-2">
+                    <input type="checkbox" id="need-designe" class="sr-only" />
+                    <label for="need-designe">Потрібен дизайн для сайта?</label>
+                  </div>
+                  <div class="relative w-full rounded-md border transition-colors focus-within:border-secondary/60">
+                    <label for="form-tel" class="sr-only"></label>
+                    <textarea
+                      name="form-designe-desc"
+                      id="form-designe-desc"
+                      class="w-full resize-none rounded-md px-4 py-3 focus:border-0 focus:outline-none"
+                      placeholder="Вподобання стосовно стилю та дазайну сайту"></textarea>
+                  </div>
+                </div>
               </div>
-              <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
-                <label for="form-email" class="sr-only"></label>
-                <input
-                  required
-                  autocomplete="off"
-                  id="form-email"
-                  name="form-email"
-                  type="text"
-                  inputmode="email"
-                  class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
-                <span
-                  class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
-                  >Пошта</span
-                >
-              </div>
-              <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
-                <label for="form-tel" class="sr-only"></label>
-                <input
-                  required
-                  autocomplete="off"
-                  id="form-tel"
-                  name="form-tel"
-                  type="text"
-                  inputmode="tel"
-                  class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
-                <span
-                  class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
-                  >Телефон</span
-                >
+
+              <div class="w-full">
+                <h2 class="mb-4 text-xl font-semibold">Додаткові послуги</h2>
+                <div class="space-y-4">
+                  <div>
+                    <div class="toggle-checkbox mb-2">
+                      <input type="checkbox" id="need-hosting" class="sr-only" />
+                      <label for="need-hosting">Послуги хостинг провайдера</label>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-center">
+                    <div class="toggle-checkbox">
+                      <input type="checkbox" id="need-domain" class="sr-only" />
+                      <label for="need-domain">Реєстрація домену</label>
+                    </div>
+                    <div class="relative rounded-md border transition-colors focus-within:border-secondary/60">
+                      <label for="form-name" class="sr-only"></label>
+                      <input required autocomplete="off" id="form-name" type="text" name="form-name" class="peer w-full rounded-md px-3 py-2 focus:border-0 focus:outline-none" />
+                      <span
+                        class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                        >website.com</span
+                      >
+                    </div>
+                  </div>
+                  <div>
+                    <div class="toggle-checkbox mb-2">
+                      <input type="checkbox" id="need-seo" class="sr-only" />
+                      <label for="need-seo">SEO (оптимізація пошукових систем)</label>
+                    </div>
+                  </div>
+                </div>
               </div>
             </form>
           </div>
