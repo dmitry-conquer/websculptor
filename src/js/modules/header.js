@@ -3,6 +3,7 @@ export function useHeader() {
   if (header) {
     const openHeaderMenuButton = document.getElementById("open-menu");
     const headerMenu = document.getElementById("header-menu");
+    const headerLinks = document.querySelectorAll(".header-menu-item, .header-btn");
     const burgerAppearenceWidth = 1024;
 
     if (window.innerWidth < burgerAppearenceWidth) {
@@ -12,15 +13,13 @@ export function useHeader() {
     }
 
     openHeaderMenuButton.addEventListener("click", () => {
-      if (window.innerWidth <= burgerAppearenceWidth) {
-        toggleMenu();
-      }
+      toggleMenu();
     });
 
     // close menu on Escape
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") {
-        if (headerMenu.classList.contains("left-0")) {
+        if (headerMenu.classList.contains("active")) {
           toggleMenu();
         }
       }
@@ -44,7 +43,11 @@ export function useHeader() {
     function toggleMenu() {
       document.body.classList.toggle("lock");
       openHeaderMenuButton.classList.toggle("active-header-icon");
-      headerMenu.classList.toggle("-translate-x-full");
+      headerMenu.classList.toggle("active");
+      headerLinks.forEach((item, i) => {
+        item.style.setProperty("--i", `${i + 1}`);
+        item.classList.toggle("active-link");
+      });
       tabLoopControl();
     }
 
@@ -55,7 +58,7 @@ export function useHeader() {
       const lastFocusableElement = focusableElements[focusableElements.length - 1];
       firstFocusableElement.focus();
 
-      if (headerMenu.classList.contains("left-0")) {
+      if (headerMenu.classList.contains("active")) {
         headerMenu.addEventListener("keydown", handleTabKey);
         focusableElements.forEach(link => {
           link.removeAttribute("tabIndex");

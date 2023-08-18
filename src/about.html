@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="uk">
+  @@include('components/head.html', { 'title': 'про нас' })
+  <body id="particles-js">
+    <div class="flex min-h-screen flex-col overflow-hidden">
+      @@include('components/header.html', { })
+      <main class="grow">
+        <!-- hero -->
+        <section class="bg-transparent py-section-lg sm:pb-16 sm:pt-section-xl lg:flex lg:flex-col lg:items-center">
+          <div class="container flex flex-col items-center gap-section-gap lg:flex-row">
+            <div id="hero-content" class="lg:w-1/2">
+              <h2 class="mb-4 inline-flex text-center text-3xl font-extrabold sm:text-left md:text-5xl lg:mb-10 lg:whitespace-nowrap">Декілька слів про нас</h2>
+              <p>
+                Ми - команда професіоналів з глибоким розумінням сучасних веб-технологій та дизайну, які працюють в сфері розробки сайтів. Наша місія - допомогти вам створити
+                вражаючу та ефективну присутність в Інтернеті, яка відображатиме унікальний характер вашого бізнесу.
+                <br />
+                <br />
+                Наш підхід до роботи базується на глибокому аналізі ваших потреб, ринку та конкурентного середовища. Ми віримо, що кожен веб-проект повинен бути унікальним, тому ми
+                працюємо над створенням індивідуальних рішень, які допоможуть вам виділитися на тлі конкурентів.
+              </p>
+            </div>
+            <div data-da="#hero-content,1024,1" class="mx-auto w-full max-lg:mb-8 sm:w-5/6 lg:w-1/2">
+              <img src="./img/web-dev-group.svg" alt="web-dev-group" />
+            </div>
+          </div>
+        </section>
+
+        <!-- why  -->
+        <section class="bg-slate-100 py-section-sm text-center sm:py-section-lg">
+          <div class="mx-auto max-w-2xl">
+            <h2 class="mb-4 text-3xl font-extrabold md:text-4xl lg:mb-6">Чому ви повинні обрати саме нас?</h2>
+            <p>
+              Якщо ви шукаєте надійних партнерів у сфері розробки веб-сайтів, які розуміють ваші потреби та готові втілити ваші ідеї у реальність, то ви потрапили за адресою. Ми
+              готові працювати разом з вами, щоб створити сучасний, функціональний та привабливий веб-проект, який буде служити вам і вашим клієнтам.
+            </p>
+          </div>
+        </section>
+        <!-- tabs -->
+        <section data-tab class="mx-auto max-w-7xl py-section-lg">
+          <div class="mb-12 flex w-full gap-0 overflow-y-auto sm:gap-6 lg:justify-center">
+            <button
+              data-tab-caption="1"
+              class="active-tab-caption flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-4 py-2 text-lg font-medium sm:px-3 sm:py-3"
+              type="button">
+              <svg class="h-6 w-6">
+                <use href="./sprites/sprite.svg#icon-rocket"></use>
+              </svg>
+              <span>Динамічність</span>
+            </button>
+            <button
+              data-tab-caption="2"
+              class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-4 py-2 text-lg font-medium sm:px-3 sm:py-3"
+              type="button">
+              <svg class="h-6 w-6">
+                <use href="./sprites/sprite.svg#icon-anim"></use>
+              </svg>
+              <span>Анімації</span>
+            </button>
+            <button
+              data-tab-caption="3"
+              class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-4 py-2 text-lg font-medium sm:px-3 sm:py-3"
+              type="button">
+              <svg class="h-6 w-6">
+                <use href="./sprites/sprite.svg#icon-seo"></use>
+              </svg>
+              <span>SEO</span>
+            </button>
+            <button
+              data-tab-caption="4"
+              class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-4 py-2 text-lg font-medium sm:px-3 sm:py-3"
+              type="button">
+              <svg class="h-6 w-6">
+                <use href="./sprites/sprite.svg#icon-shield"></use>
+              </svg>
+              <span>Захищеність</span>
+            </button>
+            <button
+              data-tab-caption="5"
+              class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-4 py-2 text-lg font-medium sm:px-3 sm:py-3"
+              type="button">
+              <svg class="h-6 w-6">
+                <use href="./sprites/sprite.svg#icon-database"></use>
+              </svg>
+              <span>Бази даних</span>
+            </button>
+            <button
+              data-tab-caption="6"
+              class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-4 py-2 text-lg font-medium sm:px-6 sm:py-3"
+              type="button">
+              <svg class="h-6 w-6">
+                <use href="./sprites/sprite.svg#icon-fast"></use>
+              </svg>
+              <span>Оптимізація</span>
+            </button>
+          </div>
+          <div>
+            <!-- dynamic -->
+            <div data-tab-content="1" class="active-tab-content hidden -translate-x-1/2 flex-col items-center gap-6 opacity-50 transition-all lg:flex-row lg:gap-14">
+              <div class="w-full text-center lg:w-1/2">
+                <h2 class="mb-4">Динамічні сайти</h2>
+                <p class="mb-8 text-base md:text-lg">
+                  Динамічний сайт дозволить вам подати вашу інформацію та вміст у найбільш вражаючому та ефективному способі. Сайт - це не просто рядок тексту та зображень, а
+                  потужний інструмент для розповіді вашої історії, залучення уваги відвідувачів та створення незабутнього першого враження.
+                </p>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <div class="half-slider">
+                  <div class="half-wrapper">
+                    <div class="half-slide relative">
+                      <img src="./img/stock/img3.webp" class="h-full w-[120%] object-cover" alt="cover_stomatolog" />
+                      <h3
+                        data-swiper-parallax-x="-80%"
+                        class="absolute bottom-5 right-5 max-w-xs rounded-lg bg-primary/70 px-4 py-2 text-center text-lg font-extrabold sm:mx-10 md:text-4xl">
+                        Візуальна динаміка
+                      </h3>
+                    </div>
+                    <div class="half-slide relative">
+                      <img src="./img/stock/img2.webp" class="h-full w-[120%] object-cover" alt="cover_psycho" />
+                      <h3
+                        data-swiper-parallax-x="-80%"
+                        class="absolute bottom-5 right-5 max-w-xs rounded-lg bg-primary/70 px-4 py-2 text-center text-lg font-extrabold sm:mx-10 md:text-4xl">
+                        Зручне управління
+                      </h3>
+                    </div>
+                    <div class="half-slide relative">
+                      <img src="./img/stock/img1.webp" class="h-full w-[120%] object-cover" alt="factum_cover" />
+                      <h3
+                        data-swiper-parallax-x="-80%"
+                        class="absolute bottom-5 right-5 max-w-xs rounded-lg bg-primary/70 px-4 py-2 text-center text-lg font-extrabold sm:mx-10 md:text-4xl">
+                        Збільшення залученості
+                      </h3>
+                    </div>
+                    <div class="half-slide relative">
+                      <img src="./img/stock/img4.webp" class="h-full w-[120%] object-cover" alt="cover_tur" />
+                      <h3
+                        data-swiper-parallax-x="-80%"
+                        class="absolute bottom-5 right-5 max-w-xs rounded-lg bg-primary/70 px-4 py-2 text-center text-lg font-extrabold sm:mx-10 md:text-4xl">
+                        Зростання конверсій
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination"></div>
+              </div>
+            </div>
+            <!-- animations -->
+            <div data-tab-content="2" class="hidden -translate-x-1/2 flex-col items-center gap-6 opacity-50 transition-all lg:flex-row lg:gap-14">
+              <div class="w-full text-center lg:w-1/2">
+                <h2 class="mb-4">Анімації будь-якої складності</h2>
+                <p class="text-base max-lg:mt-8 md:text-lg lg:mb-8">
+                  Наші креативці розробляють захоплюючі інтерактивні веб-елементи та анімацію, що залишають позитивне враження на відвідувачів та підсилюють ефективність вашого
+                  сайту.
+                </p>
+              </div>
+              <div class="relative w-full lg:w-1/2">
+                <div class="perspective mx-auto" class="">
+                  <span class="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
+                    <svg class="opacity-59 h-16 w-16 animate-pulse lg:h-32 lg:w-32">
+                      <use href="./sprites/sprite.svg#icon-finger"></use>
+                    </svg>
+                  </span>
+                  <img data-parallax-speed="5" src="./img/create-designe.svg" alt="baloon" class="transform-perspective w-full shadow-2xl" />
+                </div>
+              </div>
+            </div>
+            <!-- SEO -->
+            <div data-tab-content="3" class="hidden -translate-x-1/2 flex-col items-center gap-6 opacity-50 transition-all lg:flex-row lg:gap-14">
+              <div class="w-full text-center lg:w-1/2">
+                <h2 class="mb-4">SEO</h2>
+                <p class="text-base max-lg:mt-8 md:text-lg lg:mb-8">
+                  Покращення видимості вашого веб-сайту в пошукових системах - це ключ до залучення нових клієнтів. Ми впроваджуємо стратегії SEO та здійснюємо оптимізацію, щоб ваш
+                  сайт займав високі позиції у пошукових результатів.
+                </p>
+              </div>
+              <div class="relative w-full lg:w-1/2">
+                <div class="mx-auto" class="">
+                  <img src="./img/seo.svg" alt="baloon" class="w-full" />
+                </div>
+              </div>
+            </div>
+            <!-- save -->
+            <div data-tab-content="4" class="hidden -translate-x-1/2 flex-col items-center gap-6 opacity-50 transition-all lg:flex-row lg:gap-14">
+              <div class="w-full text-center lg:w-1/2">
+                <h2 class="mb-4">Захищеність і конфіденційність</h2>
+                <p class="text-base max-lg:mt-8 md:text-lg lg:mb-8">
+                  Ми приділяємо велику увагу захисту ваших даних та конфіденційності. Наші експерти забезпечують високий рівень кібербезпеки, застосовуючи передові технології
+                  шифрування та заходи захисту. Ваша інформація залишається приватною та недоступною для сторонніх осіб. Ми гарантуємо безпеку вашого досвіду взаємодії з нашим
+                  сайтом.
+                </p>
+              </div>
+              <div class="relative w-full lg:w-1/2">
+                <div class="mx-auto" class="">
+                  <img src="./img/secure.svg" alt="baloon" class="w-full" />
+                </div>
+              </div>
+            </div>
+            <!-- database -->
+            <div data-tab-content="5" class="hidden -translate-x-1/2 flex-col items-center gap-6 opacity-50 transition-all lg:flex-row lg:gap-14">
+              <div class="w-full text-center lg:w-1/2">
+                <h2 class="mb-4">Організація та оптимізація баз даних</h2>
+                <p class="text-base max-lg:mt-8 md:text-lg lg:mb-8">
+                  Ваш веб-сайт - це сховище важливої інформації. Ми створимо та оптимізуємо бази даних для ефективного збереження та швидкого доступу до даних, що дозволить вашому
+                  бізнесу працювати як покотирувано.
+                </p>
+              </div>
+              <div class="relative w-full lg:w-1/2">
+                <div class="mx-auto" class="">
+                  <img src="./img/docs.svg" alt="baloon" class="w-full" />
+                </div>
+              </div>
+            </div>
+            <!-- speed optimization -->
+            <div data-tab-content="6" class="hidden -translate-x-1/2 flex-col items-center gap-6 opacity-50 transition-all lg:flex-row lg:gap-14">
+              <div class="w-full text-center lg:w-1/2">
+                <h2 class="mb-4">Оптимізація швидкості</h2>
+                <p class="text-base max-lg:mt-8 md:text-lg lg:mb-8">
+                  Ваш веб-сайт повинен вражати не лише дизайном, але й швидкістю роботи та відмінною взаємодією. Наша команда працює над кожним деталем, щоб ваш сайт завантажувався
+                  швидко, а відвідувачі мали найкращий користувацький досвід.
+                </p>
+              </div>
+              <div class="relative w-full lg:w-1/2">
+                <div class="mx-auto" class="">
+                  <img src="./img/speed-site.svg" alt="baloon" class="w-full" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- process -->
+        <section class="bg-slate-100 py-section-sm sm:py-section-lg">
+          <div class="container items-center space-y-section-gap xl:flex xl:flex-row-reverse">
+            <div class="w-full lg:w-5/6 xl:w-1/2">
+              <h2 class="text-center">Процес розробки</h2>
+              <img src="./img/process.svg" alt="Процес розробки" />
+            </div>
+            <div class="w-full xl:w-1/2">
+              <div>
+                <div class="relative flex pb-12">
+                  <div class="absolute inset-0 flex h-full w-10 items-center justify-center">
+                    <div class="pointer-events-none h-full w-1 bg-gray-200"></div>
+                  </div>
+                  <div class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="h-5 w-5" stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                    </svg>
+                  </div>
+                  <div class="flex-grow pl-4">
+                    <h3 class="mb-1 text-base font-semibold tracking-wider text-slate-800 sm:text-lg">Крок 1: Консультація та Аналіз</h3>
+                    <p class="text-sm leading-relaxed sm:text-base">
+                      Ми розпочинаємо з ретельної консультації, де ми слухаємо ваші ідеї, потреби та вимоги. Разом ми аналізуємо ваше завдання, визначаємо цілі та створюємо
+                      стратегію для подальшої роботи.
+                    </p>
+                  </div>
+                </div>
+                <div class="relative flex pb-12">
+                  <div class="absolute inset-0 flex h-full w-10 items-center justify-center">
+                    <div class="pointer-events-none h-full w-1 bg-gray-200"></div>
+                  </div>
+                  <div class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12" />
+                    </svg>
+                  </div>
+                  <div class="flex-grow pl-4">
+                    <h3 class="mb-1 text-base font-semibold tracking-wider text-slate-800 sm:text-lg">Крок 2: Дизайн та Концепція</h3>
+                    <p class="text-sm leading-relaxed sm:text-base">
+                      На цьому етапі наші дизайнери працюють над створенням вражаючого дизайну, який відображає ваш бренд та цінності. Ми створюємо концепцію, яка захоплює вашу
+                      аудиторію та робить вас видатними в цифровому просторі.
+                    </p>
+                  </div>
+                </div>
+                <div class="relative flex pb-12">
+                  <div class="absolute inset-0 flex h-full w-10 items-center justify-center">
+                    <div class="pointer-events-none h-full w-1 bg-gray-200"></div>
+                  </div>
+                  <div class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="h-5 w-5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                    </svg>
+                  </div>
+                  <div class="flex-grow pl-4">
+                    <h3 class="mb-1 text-base font-semibold tracking-wider text-slate-800 sm:text-lg">Крок 3: Розробка та Тестування</h3>
+                    <p class="text-sm leading-relaxed sm:text-base">
+                      На цьому етапі ми перетворюємо дизайн у реальний продукт. Наші розробники використовують передові технології та найкращі практики для створення
+                      функціонального та інтерактивного веб-сайту. Після цього ми проводимо ретельне тестування, щоб переконатися в його якості та продуктивності.
+                    </p>
+                  </div>
+                </div>
+                <div class="relative flex pb-12">
+                  <div class="absolute inset-0 flex h-full w-10 items-center justify-center">
+                    <div class="pointer-events-none h-full w-1 bg-gray-200"></div>
+                  </div>
+                  <div class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="h-5 w-5" stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+                    </svg>
+                  </div>
+                  <div class="flex-grow pl-4">
+                    <h3 class="mb-1 text-base font-semibold tracking-wider text-slate-800 sm:text-lg">Крок 4: Впровадження та Оптимізація</h3>
+                    <p class="text-sm leading-relaxed sm:text-base">
+                      Після успішного тестування ми готові впровадити ваш веб-сайт у дію. Ми забезпечуємо його безперебійну роботу, оптимізуємо продуктивність та готуємо його до
+                      запуску.
+                    </p>
+                  </div>
+                </div>
+                <div class="relative flex">
+                  <div class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
+                      <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                      <path d="M22 4L12 14.01l-3-3"></path>
+                    </svg>
+                  </div>
+                  <div class="flex-grow pl-4">
+                    <h3 class="mb-1 text-base font-semibold tracking-wider text-slate-800 sm:text-lg">Крок 5: Підтримка та Розвиток</h3>
+                    <p class="text-sm leading-relaxed sm:text-base">
+                      Наша співпраця не закінчується після запуску. Ми пропонуємо технічну підтримку, оновлення та розвиток вашого веб-сайту. Ми завжди готові вдосконалювати та
+                      розширювати вашу цифрову присутність.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- order -->
+        <section class="bg-transparent py-section-sm sm:py-section-lg">
+          <div class="container items-center gap-section-gap lg:flex lg:flex-row">
+            <div data-da="#order-content,1024,1" class="mx-auto w-full max-lg:mb-8 sm:w-5/6 lg:w-1/2">
+              <img src="./img/deal.svg" alt="deal" />
+            </div>
+            <div id="order-content" class="w-full lg:w-1/2">
+              <h2 class="text-center sm:text-left">Замовити сайт</h2>
+              <p class="mb-10 text-base md:text-lg">
+                Готові реалізувати свою ідею у вигляді захоплюючого та функціонального веб-сайту? Просто заповніть нашу
+                <a href="order.html" class="font-medium text-secondary hover:underline">форму замовлення</a>, і ми зв'яжемося з вами найближчим часом, щоб обговорити ваші потреби
+                та розпочати роботу над проектом.
+              </p>
+              @@include('components/btn-primary-arrow.html', { 'text': 'Замовити', 'link': 'order.html'})
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="bg-transparent py-section-sm sm:py-section-lg">
+          <div class="container">
+            <h2 class="text-center">Залишилися питання?</h2>
+            <div class="flex flex-col items-center gap-section-gap lg:flex-row">
+              <div class="mx-auto w-full sm:w-3/5 lg:w-1/2">
+                <img src="./img/yes-no.svg" alt="yes-no" />
+              </div>
+              <div class="w-full space-y-6 lg:w-1/2 [&>*:last-child]:border-0">
+                <div class="border-b pb-6">
+                  <div data-spoiler aria-expanded="false" class="flex cursor-pointer items-center justify-between">
+                    <h3 class="text-lg font-semibold sm:text-xl">How much time does it take?</h3>
+                    <svg class="h-6 w-6 rotate-45 transition-transform duration-500">
+                      <use href="./sprites/sprite.svg#icon-close"></use>
+                    </svg>
+                  </div>
+                  <div aria-hidden="true" class="max-h-0 overflow-hidden transition-all">
+                    <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+                <div class="border-b pb-6">
+                  <div data-spoiler aria-expanded="false" class="flex cursor-pointer items-center justify-between">
+                    <h3 class="text-lg font-semibold sm:text-xl">How much time does it take?</h3>
+                    <svg class="h-6 w-6 rotate-45 transition-transform duration-500">
+                      <use href="./sprites/sprite.svg#icon-close"></use>
+                    </svg>
+                  </div>
+                  <div aria-hidden="true" class="max-h-0 overflow-hidden transition-all">
+                    <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+                <div class="border-b pb-6">
+                  <div data-spoiler aria-expanded="false" class="flex cursor-pointer items-center justify-between">
+                    <h3 class="text-lg font-semibold sm:text-xl">How much time does it take?</h3>
+                    <svg class="h-6 w-6 rotate-45 transition-transform duration-500">
+                      <use href="./sprites/sprite.svg#icon-close"></use>
+                    </svg>
+                  </div>
+                  <div aria-hidden="true" class="max-h-0 overflow-hidden transition-all">
+                    <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+                <div class="border-b pb-6">
+                  <div data-spoiler aria-expanded="false" class="flex cursor-pointer items-center justify-between">
+                    <h3 class="text-lg font-semibold sm:text-xl">How much time does it take?</h3>
+                    <svg class="h-6 w-6 rotate-45 transition-transform duration-500">
+                      <use href="./sprites/sprite.svg#icon-close"></use>
+                    </svg>
+                  </div>
+                  <div aria-hidden="true" class="max-h-0 overflow-hidden transition-all">
+                    <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+                <div class="border-b pb-6">
+                  <div data-spoiler aria-expanded="false" class="flex cursor-pointer items-center justify-between">
+                    <h3 class="text-lg font-semibold sm:text-xl">How much time does it take?</h3>
+                    <svg class="h-6 w-6 rotate-45 transition-transform duration-500">
+                      <use href="./sprites/sprite.svg#icon-close"></use>
+                    </svg>
+                  </div>
+                  <div aria-hidden="true" class="max-h-0 overflow-hidden transition-all">
+                    <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('components/footer.html', { })
+    </div>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
+  </body>
+</html>

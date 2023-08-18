@@ -7,7 +7,7 @@
       <main class="flex-grow">
         <!-- order -->
         <section class="mx-auto max-w-4xl bg-transparent py-24 sm:py-48">
-          <div class="mx-auto mb-16 max-w-2xl text-center">
+          <div class="mx-auto mb-16 max-w-2xl p-4 text-center">
             <h2 class="mb-6 text-3xl font-extrabold md:text-4xl">Замовити сайт</h2>
             <p class="text-sm sm:text-base md:text-lg">
               Готові реалізувати свою ідею у вигляді захоплюючого та функціонального веб-сайту? Просто заповніть нашу форму замовлення, і ми зв'яжемося з вами найближчим часом, щоб
@@ -15,7 +15,7 @@
             </p>
           </div>
           <div>
-            <form action="" class="custom-shadow space-y-14 rounded-md bg-white p-6">
+            <form action="" id="form-order" class="custom-shadow space-y-14 rounded-md bg-white p-6">
               <div class="">
                 <h2 class="mb-4 text-xl font-semibold">Загальні</h2>
                 <div class="flex w-full flex-wrap gap-4">
@@ -110,18 +110,36 @@
                     >
                   </div>
 
-                  <!-- designe description -->
+                  <!-- pages -->
+                  <div class="relative grow rounded-md border transition-colors focus-within:border-secondary/60">
+                    <label for="form-pages" class="sr-only"></label>
+                    <input
+                      required
+                      autocomplete="off"
+                      id="form-site-name"
+                      name="form-site-name"
+                      type="text"
+                      inputmode="tel"
+                      class="peer w-full rounded-md px-4 py-3 focus:border-0 focus:outline-none" />
+                    <span
+                      class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                      >Кількість сторінок</span
+                    >
+                  </div>
+
+                  <!-- site description -->
                   <div class="relative w-full rounded-md border transition-colors focus-within:border-secondary/60">
-                    <label for="form-tel" class="sr-only"></label>
+                    <label for="form-site-desc" class="sr-only"></label>
                     <textarea
-                      name="form-designe-desc"
-                      id="form-designe-desc"
-                      class="w-full resize-none rounded-md px-4 py-3 focus:border-0 focus:outline-none"
-                      placeholder="Вподобання стосовно стилю та дазайну сайту"></textarea>
+                      name="form-site-desc"
+                      id="form-site-desc"
+                      class="w-full placeholder:text-slate-400 resize-none rounded-md px-4 py-3 focus:border-0 focus:outline-none"
+                      placeholder="Вкажіть подробиці про ваш сайт, це допоможе нам швидше виконати роботу"></textarea>
                   </div>
                 </div>
               </div>
 
+              <!-- designe description -->
               <div class="w-full">
                 <h2 class="mb-4 text-xl font-semibold">Дизайн</h2>
                 <div>
@@ -129,13 +147,16 @@
                     <input type="checkbox" id="need-designe" class="sr-only" />
                     <label for="need-designe">Потрібен дизайн для сайта?</label>
                   </div>
-                  <div class="relative w-full rounded-md border transition-colors focus-within:border-secondary/60">
-                    <label for="form-tel" class="sr-only"></label>
-                    <textarea
-                      name="form-designe-desc"
-                      id="form-designe-desc"
-                      class="w-full resize-none rounded-md px-4 py-3 focus:border-0 focus:outline-none"
-                      placeholder="Вподобання стосовно стилю та дазайну сайту"></textarea>
+                  <div class="">
+                    <div class="relative w-full h-20 rounded-md border transition-colors focus-within:border-secondary/60">
+                      <label for="form-tel" class="sr-only"></label>
+                      <textarea
+                      disabled
+                        name="form-designe-desc"
+                        id="form-designe-desc"
+                        class="w-full h-full disabled:bg-slate-100 placeholder:text-slate-400 resize-none rounded-md px-4 py-3 focus:border-0 focus:outline-none"
+                        placeholder="Вподобання стосовно стилю та дазайну сайту"></textarea>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -149,16 +170,33 @@
                       <label for="need-hosting">Послуги хостинг провайдера</label>
                     </div>
                   </div>
-                  <div class="flex gap-4 items-center">
-                    <div class="toggle-checkbox">
+                  <div class="flex flex-wrap items-center gap-4">
+                    <div class="toggle-checkbox flex items-center gap-1">
                       <input type="checkbox" id="need-domain" class="sr-only" />
                       <label for="need-domain">Реєстрація домену</label>
+                      <a
+                        class="group transition-colors"
+                        href="https://www.hostinger.com.ua/kupyty-domen"
+                        aria-label="Підібрати домен"
+                        data-microtip-position="top-left"
+                        role="tooltip">
+                        <svg class="h-5 w-5 text-slate-500 group-hover:text-secondary">
+                          <use href="./sprites/sprite.svg#icon-info"></use>
+                        </svg>
+                      </a>
                     </div>
                     <div class="relative rounded-md border transition-colors focus-within:border-secondary/60">
-                      <label for="form-name" class="sr-only"></label>
-                      <input required autocomplete="off" id="form-name" type="text" name="form-name" class="peer w-full rounded-md px-3 py-2 focus:border-0 focus:outline-none" />
+                      <label for="form-domain-name" class="sr-only"></label>
+                      <input
+                        required
+                        autocomplete="off"
+                        id="form-domain-name"
+                        disabled
+                        type="text"
+                        name="form-domain-name"
+                        class="peer w-full disabled:bg-slate-100 rounded-md px-3 py-2 focus:border-0 focus:outline-none" />
                       <span
-                        class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 bg-white px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm"
+                        class="pointer-events-none  absolute left-3 top-1/2 -translate-y-1/2  px-2 text-base text-slate-400 transition-all duration-200 peer-valid:top-0 peer-valid:bg-white peer-valid:text-sm peer-focus:top-0 peer-focus:text-sm peer-focus:bg-white"
                         >website.com</span
                       >
                     </div>
@@ -171,12 +209,19 @@
                   </div>
                 </div>
               </div>
+
+              <button
+                type="submit"
+                class="mx-auto block whitespace-nowrap rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-light hover:shadow-sm sm:px-6 sm:py-4 sm:text-base md:text-lg">
+                Замовити сайт
+              </button>
             </form>
           </div>
         </section>
       </main>
       @@include('components/footer.html', { })
     </div>
+    @@include('components/modal-success.html')
     <script type="module" crossorigin src="./js/app.min.js"></script>
   </body>
 </html>

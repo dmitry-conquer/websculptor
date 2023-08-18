@@ -9,7 +9,7 @@
         <section class="lg:flex lg:flex-col lg:items-center bg-slate-100 py-section-lg sm:pt-section-xl sm:pb-16">
           <div class="container flex flex-col items-center gap-section-gap lg:flex-row">
             <div id="hero-content" class="lg:w-1/2" >
-              <h1 class="mb-4 text-center text-3xl font-extrabold sm:text-left md:text-4xl lg:mb-10">
+              <h1 class="mb-4 text-center text-3xl font-extrabold sm:text-left md:text-5xl lg:mb-10">
                 Ми допоможемо вам: <br />
                 <span id="hero-title" class="text-2xl leading-none sm:leading-normal md:text-3xl"></span>
               </h1>
@@ -61,7 +61,7 @@
               рівень в онлайн просторі.
             </p>
           </div>
-          <div class="mx-auto max-w-4xl px-4">
+          <div class="mx-auto max-w-4xl px-4 flex flex-col items-center">
             <div class="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2">
               <div class="custom-shadow flex flex-col items-center gap-4 rounded-lg p-8"  >
                 <img src="./img/bright.svg" alt="Динамічність та яскравість" class="h-16 w-16" />
@@ -96,7 +96,11 @@
                 </p>
               </div>
             </div>
+            <div class="mt-8">
+              @@include('components/btn-primary-arrow.html', { 'text': 'Детальніше'})
+            </div>
           </div>
+       
         </section>
 
         <!-- portfolio -->
